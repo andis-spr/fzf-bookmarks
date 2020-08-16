@@ -5,3 +5,4 @@ dep-bin-win/sed/*
 dep-bin-win/cat/*
 dep-bin-win/fzf/*
 dep-bin-win/lua/*
+*.lnk
