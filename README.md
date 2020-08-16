@@ -4,11 +4,11 @@ The really simple solution for website bookmarks management.
 
 ## Features
 
-- Query and select multiple bookmarks for opening in a web browser.
+- Query and select multiple bookmarks for opening in web browser.
 
-- Manage entire bookmarks collection from your favorite text editor.
+- Manage bookmarks collection from your favorite text editor.
 
-- Made to run from within a macOS, Linux and Windows command line interface.
+- Made to run from macOS, Linux and Windows command line interfaces.
 
 ## Incentive
 
