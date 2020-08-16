@@ -1,0 +1,2 @@
+- GIF preview
+- JS bookmarklet to put bookmark lines in clipboard for adding them to bookmarks file
