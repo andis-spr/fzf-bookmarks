@@ -1,4 +1,4 @@
-fzf-bookmarks - simple browser-independent web bookmarks opener
+fzf-bookmarks - simple, browser-independent web bookmarks opener
 Copyright © 2020 Andis Spriņķis
 
 Permission is hereby granted, free of charge, to any person obtaining

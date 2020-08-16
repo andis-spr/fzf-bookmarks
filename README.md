@@ -1,6 +1,6 @@
 # fzf-bookmarks
 
-simple browser-independent web bookmarks opener
+simple, browser-independent web bookmarks opener
 
 ## Features
 
@@ -16,6 +16,8 @@ Browser UIs and bookmark storage can be quite cumbersome to deal with.
 
 ## Requirements
 
-lua, fzf, sed, awk, cat
+- lua
+- fzf
+- sed, awk, cat
 
-On Windows you can quickly install these packages using tool called "scoop.sh" OR download the binaries seperately and place them in the right folders under /dep-bin-win/-package-.
+On Windows you can quickly install these packages using tool called "scoop.sh" OR download the binaries seperately and place them in the right folders under /dep-bin-win/{package}.
