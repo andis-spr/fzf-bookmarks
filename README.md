@@ -25,7 +25,7 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 ## Requirements
 
 - `lua`, `fzf`
-- `sed`, `awk`, `cat`.
+- `sed`, `awk`, `cat`
 
 ### Windows
 
