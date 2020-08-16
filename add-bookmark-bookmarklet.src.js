@@ -1,9 +1,11 @@
 (() => {
     const metaDescription = document.querySelector(`meta[name="description"]`);
+    const prepend = `  #  `;
     const colDelimeter = `  -  `;
     prompt(
         `Copy this`,
-        `${document.title.replace(/\s+/g, ` `).trim()}
+        `${prepend}
+        ${document.title.replace(/\s+/g, ` `).trim()}
         ${colDelimeter}
         ${window.location}
         ${colDelimeter}
