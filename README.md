@@ -1,6 +1,6 @@
 # fzf-bookmarks
 
-A simple solution for website bookmarks management.
+Really simple solution for website bookmarks management.
 
 ## Features
 
