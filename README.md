@@ -34,4 +34,4 @@ On Windows you can install these packages with <a href="https://scoop.sh" target
 ```
 scoop install lua fzf sed gawk coreutils
 ```
-Or you can manually download and extract the binaries inside `dep-bin-win/-package-` directories.
+Or you can manually download the binaries and extract them inside `dep-bin-win/-package-` directories.
