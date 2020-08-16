@@ -16,7 +16,11 @@ I realized I wanted a dead simple search tool and plaintext storage for my bookm
 
 ## "Save-a-bookmark" bookmarklet
 
-Bookmark <a href="javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20prepend%20%3D%20%60%20%20%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20-%20%20%60%3Bprompt(%60Copy%20this%60%2C%60%24%7Bprepend%7D%24%7Bdocument.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%26%26%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%60)%3B%7D)()%7D)()" title="fzf-bookmarks Bookmarklet">this URL</a> in the web browser for copy-pasting page information (title, URL & description) inside your bookmarks.txt file.
+Save this bookmarklet as a bookmark in web browser for copy-pasting page information (title, URL & description) to your bookmarks.txt file.
+
+```
+javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20prepend%20%3D%20%60%20%20%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20-%20%20%60%3Bprompt(%60Copy%20this%60%2C%60%24%7Bprepend%7D%24%7Bdocument.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%26%26%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%60)%3B%7D)()%7D)()
+```
 
 ## Requirements
 
