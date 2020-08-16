@@ -1,4 +1,4 @@
-fzf-bookmarks - The really simple solution for website bookmarks management.
+fzf-bookmarks - The really simple bookmarks menu.
 
 Copyright © 2020 Andis Spriņķis
 
