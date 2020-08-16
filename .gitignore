@@ -1,0 +1,7 @@
+BOOKMARKS.txt
+bookmarks.txt
+dep-bin-win/awk/*
+dep-bin-win/sed/*
+dep-bin-win/cat/*
+dep-bin-win/fzf/*
+dep-bin-win/lua/*

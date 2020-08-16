@@ -1,0 +1,3 @@
+@echo off
+if exist .\dep-bin-win\sed\sed.exe set PATH=.\dep-bin-win\sed;%PATH%
+echo %* | sed "s/\s\s/\n\n/g"
