@@ -24,14 +24,14 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 ## Requirements
 
-- `lua`, `fzf`
 - `sed`, `awk`, `cat`
+- `lua`, `fzf`
 
 ### Windows
 
-On Windows you can install these packages with package <a href="https://scoop.sh" target="_blank">scoop.sh</a> package manager by running
+On Windows you can install these packages with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
 
 ```
 scoop install lua fzf sed gawk coreutils
 ```
-Or you can manually download and extract theses binaries inside `dep-bin-win/-package-` directories.
+Or you can manually download and extract the binaries inside `dep-bin-win/-package-` directories.
