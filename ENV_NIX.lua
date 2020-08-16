@@ -1,7 +1,7 @@
-BOOKMARKS_FILE_PATH="./BOOKMARKS.txt"
--- BROWSER_CMD="sensible-browser %s"
+BOOKMARKS_FILE_PATH="./bookmarks.txt"
+BROWSER_CMD="sensible-browser %s"
 -- BROWSER_CMD="epiphany %s"
-BROWSER_CMD="firefox -new-tab %s"
+-- BROWSER_CMD="firefox -new-tab %s"
 BROWSER_CMD_SEQ_EXEC=false
 
 FZF_PREVIEW_WINDOW="up:6"

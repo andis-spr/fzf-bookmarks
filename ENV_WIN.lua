@@ -1,5 +1,7 @@
-BOOKMARKS_FILE_PATH="./BOOKMARKS.txt"
+BOOKMARKS_FILE_PATH="./bookmarks.txt"
+-- BROWSER_CMD="epiphany %s"
 -- BROWSER_CMD="start chrome %s"
+-- BROWSER_CMD="firefox -new-tab %s"
 BROWSER_CMD="start %s"
 BROWSER_CMD_SEQ=true
 
