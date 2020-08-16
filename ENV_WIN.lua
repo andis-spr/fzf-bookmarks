@@ -1,8 +1,10 @@
 BOOKMARKS_FILE_PATH="./bookmarks.txt"
+
+-- BROWSER_CMD="start %s"
 -- BROWSER_CMD="start chrome %s"
 -- BROWSER_CMD="start firefox -new-tab %s"
-BROWSER_CMD="start %s"
-BROWSER_CMD_SEQ=true
+BROWSER_CMD="start firefox -new-tab %s"
+BROWSER_CMD_SEQ=false -- true: repeats BROWSER_CMD command call for each selected link; false: add all selected links as argument to single BROWSER_CMD command call; default: false;
 
 FZF_PREVIEW_WINDOW="up:6"
 FZF_LAYOUT="reverse-list"

@@ -1,9 +1,11 @@
 BOOKMARKS_FILE_PATH="./bookmarks.txt"
+
 -- BROWSER_CMD="sensible-browser %s"
 -- BROWSER_CMD="epiphany %s"
+-- BROWSER_CMD="chrome %s"
 -- BROWSER_CMD="start chrome %s"
 BROWSER_CMD="firefox -new-tab %s"
-BROWSER_CMD_SEQ_EXEC=false
+BROWSER_CMD_SEQ=false -- true: repeats BROWSER_CMD command call for each selected link; false: add all selected links as argument to single BROWSER_CMD command call; default: false;
 
 FZF_PREVIEW_WINDOW="up:6"
 FZF_LAYOUT="reverse-list"
