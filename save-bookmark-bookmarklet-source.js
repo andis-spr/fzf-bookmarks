@@ -1,6 +1,6 @@
 (() => {
     const metaDescription = document.querySelector(`meta[name="description"]`);
-    const prepend = `  #  `;
+    const prepend = `#  `;
     const colDelimeter = `  -  `;
     prompt(
         `Copy this`,
