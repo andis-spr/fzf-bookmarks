@@ -56,8 +56,11 @@ do
                 if (string.len(bookmark) > 0)
                 then
                     local url = getURLFromBookmark(bookmark)
-                    local browserCMD = getURLBrowserCMD(url)
-                    os.execute(string.format(CMD_OPEN_URL_IN_BROWSER, browserCMD))
+                    if (not(string.len(url) == 0))
+                    then
+                        local browserCMD = getURLBrowserCMD(url)
+                        os.execute(string.format(CMD_OPEN_URL_IN_BROWSER, browserCMD))
+                    end
                 end
             end
         else
@@ -70,7 +73,10 @@ do
                 end
             end
             local browserCMD = getURLBrowserCMD(URLstring)
-            os.execute(string.format(CMD_OPEN_URL_IN_BROWSER, browserCMD))
+            if (not(string.len(URLstring) == 0))
+            then
+                os.execute(string.format(CMD_OPEN_URL_IN_BROWSER, browserCMD))
+            end
         end
 	end
 
