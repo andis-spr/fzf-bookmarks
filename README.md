@@ -29,7 +29,7 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 ### Windows
 
-On Windows you can install these packages using package <a href="https://scoop.sh" target="_blank">scoop.sh</a> package manager by running
+On Windows you can install these packages with package <a href="https://scoop.sh" target="_blank">scoop.sh</a> package manager by running
 
 ```
 scoop install lua fzf sed gawk coreutils
