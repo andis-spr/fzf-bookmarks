@@ -8,7 +8,7 @@ simple, browser-independent web bookmarks opener
 
 - Manage your bookmarks collection from a text editor.
 
-- Runs in macOS/Linux *sh and Windows Command Prompt/PowerShell envioronments.
+- Runs in macOS/Linux *sh and Windows Command Prompt/PowerShell environments.
 
 ## Incentive
 
