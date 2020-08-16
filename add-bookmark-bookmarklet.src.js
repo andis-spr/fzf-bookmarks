@@ -1,14 +1,13 @@
 (() => {
     const metaDescription = document.querySelector(`meta[name="description"]`);
-    const delimRepeat = 3;
-    const delim = ` `;
+    const colDelimeter = `  -  `;
     prompt(
         `Copy this`,
         `${document.title.replace(/\s+/g, ` `).trim()}
-        ${delim.repeat(delimRepeat)}
+        ${colDelimeter}
         ${window.location}
-        ${delim.repeat(delimRepeat)}
+        ${colDelimeter}
         ${metaDescription && metaDescription.content.replace(/\s+/g, ` `).trim()}
-        ${delim.repeat(delimRepeat)}`
+        ${colDelimeter}`
     );
 })()
