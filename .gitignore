@@ -1,8 +1,12 @@
 BOOKMARKS.txt
 bookmarks.txt
 dep-bin-win/awk/*
+!dep-bin-win/awk/.gitkeep
 dep-bin-win/sed/*
-dep-bin-win/cat/*
+!dep-bin-win/sed/.gitkeep
 dep-bin-win/fzf/*
+!dep-bin-win/fzf/.gitkeep
 dep-bin-win/lua/*
-*.lnk
+!dep-bin-win/lua/.gitkeep
+dep-bin-win/cat/*
+!dep-bin-win/cat/.gitkeep
