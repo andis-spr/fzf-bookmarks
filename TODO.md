@@ -1,2 +1,3 @@
-- GIF preview
+- GIF preview in description
 - Support for opening URLs from Android Termux environment
+- Supercharge with `ripgrep` for having multiple bookmarks.txt files
