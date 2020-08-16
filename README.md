@@ -14,7 +14,7 @@ A simple solution for website bookmarks management.
 
 I realized I wanted a dead simple search tool and plaintext storage for my bookmarks outside of the browser after growing tired with the clunky browser UIs and their weird everchanging storage formats.
 
-## "Save-a-bookmark" bookmarklet
+## "Save-a-bookmark"
 
 Save this string as a bookmark in your web browser for conveniently copying page information (title, URL & description) to your bookmarks.txt file.
 
