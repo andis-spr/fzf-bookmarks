@@ -14,8 +14,6 @@ A simple solution for website bookmarks management.
 
 I realized I wanted a dead simple search tool and plaintext storage for my bookmarks outside of the browser after growing tired with the clunky browser UIs and their weird everchanging storage formats.
 
-I picked Fzf, Lua, *nix utilities for being fast and platform agnostic and put together something that should work from most command line interfaces.
-
 ## Requirements
 
 - lua
