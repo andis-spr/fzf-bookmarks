@@ -1,18 +1,20 @@
 # fzf-bookmarks
 
-simple, browser-independent web bookmarks opener
+A simple solution for website bookmarks management.
 
 ## Features
 
-- Query and multi-select bookmarks for opening them in a web browser.
+- Query and select multiple bookmarks for opening in a web browser.
 
-- Manage your bookmarks collection from a text editor.
+- Manage entire bookmarks collection from your favorite text editor.
 
-- Runs in macOS/Linux *sh and Windows Command Prompt/PowerShell environments.
+- Made to run from within a macOS, Linux and Windows command line interface.
 
 ## Incentive
 
-Browser UIs and bookmark storage can be quite cumbersome to deal with.
+I realized I wanted a dead simple search tool and plaintext storage for my bookmarks outside of the browser after growing tired with the clunky browser UIs and their weird everchanging storage formats.
+
+I picked Fzf, Lua, *nix utilities for being fast and platform agnostic and put together something that should work from most command line interfaces.
 
 ## Requirements
 
@@ -20,4 +22,4 @@ Browser UIs and bookmark storage can be quite cumbersome to deal with.
 - fzf
 - sed, awk, cat
 
-On Windows you can quickly install these packages using tool called "scoop.sh" OR download the binaries seperately and place them in the right folders under /dep-bin-win/{package}.
+On Windows you can install these packages using package "scoop.sh" package manager OR manually download the binaries for these tools and place them in the right folders as /dep-bin-win/{package}.
