@@ -4,7 +4,7 @@ The really simple bookmarks menu.
 
 ## Features
 
-- Query and select multiple bookmarks for opening in web browser.
+- Query and select multiple bookmarks for opening in the web browser.
 
 - Manage bookmarks collection from your favorite text editor.
 
