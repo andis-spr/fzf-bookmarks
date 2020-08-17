@@ -5,6 +5,11 @@ do
     else
         require('ENV_WIN')
     end
+
+    if (arg[1] ~= nil)
+    then
+        BOOKMARKS_FILE_PATH = arg[1]
+    end
    
 	local function magiclines(str)
         local pos = 1;
