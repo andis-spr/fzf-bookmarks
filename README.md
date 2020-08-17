@@ -43,9 +43,11 @@ This allows setting up different aliases/shortcuts/button etc. for different boo
 
 ### Windows taskbar shortcut
 
-To have a convenient fzf-bookmarks launcher icon on your Windows taskbar, create a new Shortcut with `Right click --> New --> Shortcut`, set the `Target` field to `cmd.exe /c .\start.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
+To have a convenient launcher icon on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\start.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
 
-Above mentioned bookmarks file command line parameter can also be used here. Normally Windows won't let you pin another launcher because of the same path, but you can wrap it another `.bat` script and make shortcut of that.
+Above mentioned command line parameter can also be used here.
+
+Normally Windows won't let you pin another launcher because of the same path, but you can wrap it in another `.bat` script and make shortcut of that.
 
 ## "Copy-a-bookmark"
 
