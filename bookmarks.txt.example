@@ -22,4 +22,4 @@ Bookmarks organization example:
 #  PHP: The Right Way  ~  https://phptherightway.com/  ~  An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web  ~  php, web, development, help, guide
 
 
-Contents of './save-bookmark-bookmarklet' (inline JavaScript) can be bookmarked as a link in web browser to quickly generate these bookmark lines
+Contents of './save-bookmark-bookmarklet' (inline JavaScript) can be added as web browser bookmark to quickly generate these bookmark lines.
