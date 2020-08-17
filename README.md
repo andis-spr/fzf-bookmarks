@@ -19,7 +19,7 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmar
 ## How do I run this?
 
 1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> OR clone the repository with `git clone git@github.com:andis-spr/fzf-bookmarks.git`.
-2. Make sure your system has the <a href="#requirements">requirements</a> installed.
+2. Make sure your system has the <a href="#requirements">required packages</a> installed.
 3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or create your own.
 
 ### on Windows
