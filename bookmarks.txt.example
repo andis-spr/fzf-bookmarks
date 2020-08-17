@@ -7,7 +7,6 @@ Lines of bookmarks begin with "#  " (hash, space, space). These line this will b
 
 Bookmark line column separator is "  ~  " (space, space, tilde, space, space). At least the first two columns (website title, address) should be present for search and opening functions to work.
 
---------------------------------------------
 
 Bookmarks organization example:
 
@@ -21,6 +20,5 @@ Bookmarks organization example:
 #  Mozilla Observatory  ~  https://observatory.mozilla.org/  ~  The Mozilla Observatory is a project designed to help developers, system administrators, and security professionals configure their sites safely and securely.
 #  PHP: The Right Way  ~  https://phptherightway.com/  ~  An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web  ~  php, web, development, help, guide
 
---------------------------------------------
 
 Contents of './save-bookmark-bookmarklet' (inline JavaScript) can be bookmarked as a link in web browser to quickly generate these bookmark lines
