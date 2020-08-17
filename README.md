@@ -18,8 +18,7 @@ On the shoulders of `fzf`, `lua` and *nix text utilities, fzf-bookmarks became a
 
 ## Running fzf-bookmarks
 
-1. Clone the repository with `git clone git@github.com:andis-spr/fzf-bookmarks.git` 
- or download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a>.
+1. Clone the repository with `git clone git@github.com:andis-spr/fzf-bookmarks.git` or download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a>.
 2. Make sure your system has the <a href="/#requirements">necessary packages</a> installed.
 3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or make your own.
 
