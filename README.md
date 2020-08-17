@@ -35,7 +35,7 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmar
 
 ## Tips and tricks
 
-### "Copy-a-bookmark"
+### "Copy-a-bookmark" bookmarklet
 
 Save this string as a bookmark in your web browser for conveniently copying page information (the title, URL & description) to your `bookmarks.txt` file.
 
