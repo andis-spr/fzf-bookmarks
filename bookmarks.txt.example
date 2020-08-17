@@ -1,15 +1,18 @@
-Each bookmark is a single line that should be formatted as follows (without the preceding whitespace):
+### General Information ###
 
- #  website title  ~  address  ~  website description  ~  comma-space-separated tags
-e.g.
+Bookmark line begins with "#  ". The "  ~  " separates information columns.
+
  #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
+as
+ #  website title  ~  address  ~  description  ~  tags
 
-Lines of bookmarks begin with "#  " (hash, space, space). These line this will be shown in terminal by fuzzy finder. Anything else, such as these comments and blank lines, is omited from search.
+First two columns (website title, address) should be present for the fuzzy search and opening in web browser functions to work.
 
-Bookmark line column separator is "  ~  " (space, space, tilde, space, space). At least the first two columns (website title, address) should be present for search and opening functions to work.
+The rest of informaton columns (description, tags) is optional, as it's simply intended provide more keywords to fuzzy finder.
 
+Contents of './save-bookmark-bookmarklet' (inline JavaScript) can be added as a bookmark in web browser used to quickly generate fzf-bookmarks text lines from the opened website data.
 
-Bookmarks organization example:
+### Bookmarks organization example ###
 
 #  Yr - my locations  ~  https://www.yr.no/en  ~  -  ~  weather, information, forecast
 #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
@@ -21,5 +24,3 @@ Bookmarks organization example:
 - Web Development:
 #  Mozilla Observatory  ~  https://observatory.mozilla.org/  ~  The Mozilla Observatory is a project designed to help developers, system administrators, and security professionals configure their sites safely and securely.
 #  PHP: The Right Way  ~  https://phptherightway.com/  ~  An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web  ~  php, web, development, help, guide
-
-Contents of './save-bookmark-bookmarklet' (inline JavaScript) can be added as web browser bookmark to quickly generate these bookmark lines.
