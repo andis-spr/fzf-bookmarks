@@ -8,7 +8,7 @@ The really simple bookmarks menu.
 
 - Manage bookmarks collection via your favorite text editor and version control.
 
-- Portable and will run from macOS / *BSD, Linux etc. and Windows command-line interfaces.
+- Portable and runs from macOS / *BSD, Linux etc. and Windows command-line interfaces.
 
 ## Incentive
 
@@ -37,7 +37,7 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmar
 
 There are bunch of options you can set in configuration files, like the bookmarks file location or toggle `fzf` preview.
 
-On *nix systems read configuration from `ENV_NIX.lua` files and Windows respectively from `ENV_WIN.lua`.
+On macOS / Linux systems configuration is being read from `ENV_NIX.lua` and on Windows respectively - from `ENV_WIN.lua`.
 
 The `ENV_NIX_LOCAL.lua` and `ENV_WIN_LOCAL.lua` files are intended as the real place for setting personal settings values, they are read after the main `ENV..` files.
 
