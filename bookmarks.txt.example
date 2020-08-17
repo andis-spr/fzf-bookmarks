@@ -1,18 +1,15 @@
 Each bookmark is a single line that should be formatted as follows (without the preceding whitespace):
- #  website title (required)  ~  address (also required)  ~  website description  ~  comma-space-separated tags
+ #  website title  ~  address  ~  website description  ~  comma-space-separated tags
 e.g.
  #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
 
-Bookmark lines begin with "#  " (hash, space x2) character sequence.
-Lines like this will be shown in terminal by fuzzy finder.
-Anything else, such as these comments and blank lines, is excluded from the search.
+Lines of bookmarks begin with "#  " (hash, space, space). These line this will be shown in terminal by fuzzy finder. Anything else, such as these comments and blank lines, is omited from search.
 
-Bookmark line column separator is "  ~  " (space x2, tilde, space x2) character sequence.
-First two columns (website title, address") are required.
+Bookmark line column separator is "  ~  " (space, space, tilde, space, space). At least the first two columns (website title, address) should be present for search and opening functions to work.
 
 --------------------------------------------
 
-An improvized bookmarks organization example:
+Bookmarks organization example:
 
 #  Yr - my locations  ~  https://www.yr.no/en  ~  -  ~  weather, information, forecast
 
