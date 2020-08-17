@@ -24,17 +24,34 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 ## How do I run this?
 
-On Windows simply execute the `start.bat` file.
+1. Clone the repository by issuing `git clone git@github.com:andis-spr/fzf-bookmarks.git`
 
-On macOS and Linux you first have to set `start.sh` as executable program by issuing command `chmod +x ./start.sh`, then you can launch it with `./start.sh`.
+or
+
+download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a>.
+
+2. Make sure your system has the <a href="/#requirements">required packages</a> installed.,
+
+3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or make your own.
+
+### On Windows
+
+3. Run `start.bat` file.
+
+### On macOS or Linux:
+
+3. Set `start.sh` as executable program by running `chmod +x ./start.sh` in fzf-bookmarks directory.
+4. Run `./start.sh` file.
+
+## Tips and tricks
 
 ### Command line parameters
 
-Launch files `./start.{script-ext.}` accept a bookmarks file path parameter, e.g.
+Launch files `./start.{script-ext.}` accept an optional bookmarks file path parameter, e.g.
 
-`start.sh ~/myfiles/bookmarks` or `start.bat "C:/myfiles/bookmarks"` (path forward-slashes in both cases).
+`start.sh ~/myfiles/bookmarks` or `start.bat "C:/myfiles/bookmarks"` (forward-slashes in both cases).
 
-This allows having different aliases or shortcuts for different bookmark files.
+This allows setting up different aliases/shortcuts/button etc. for different bookmark files.
 
 ### Windows taskbar shortcut
 
@@ -44,6 +61,8 @@ To have an `fzf-bookmarks` launcher icon you can pin on your Windows taskbar, cr
 
 and set `Start in` path to `fzf-bookmarks` directory.
 
+Above mentioned bookmarks file command line parameter can be used here.
+
 ## Requirements
 
 - `sed`, `awk`, `cat`
@@ -51,7 +70,7 @@ and set `Start in` path to `fzf-bookmarks` directory.
 
 ### Windows
 
-On Windows you can install these packages with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
+On Windows you can install these requirements with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
 
 ```
 scoop install sed gawk coreutils lua fzf
