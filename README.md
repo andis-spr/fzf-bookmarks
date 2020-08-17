@@ -37,11 +37,11 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmar
 
 There are bunch of options you can set in configuration files, like the bookmarks file location or toggle `fzf` preview.
 
-On macOS / Linux systems configuration is being read from `ENV_NIX.lua` and on Windows respectively - from `ENV_WIN.lua`.
+On *nix systems the main config. values are read from `ENV_NIX.lua`, on Windows respectively - `ENV_WIN.lua`.
 
-The `ENV_NIX_LOCAL.lua` and `ENV_WIN_LOCAL.lua` files are intended as the real place for setting personal settings values, they are read after the main `ENV..` files.
+The `ENV_NIX_LOCAL.lua` and `ENV_WIN_LOCAL.lua` files are intended as the real place for setting personal value overrides, as they are read after the main `ENV..` files.
 
-If you want to update `fzf-bookmarks` via pulling latest commits from GitHub repository, you can exlude your local custom configuration being tracked in `git` by running `git update-index --skip-worktree ENV_*_LOCAL.lua` on the corresponding file.
+If you choose to update `fzf-bookmarks` via pulling latest commits from GitHub repository and don't want to deal with conflicts, you can exlude your local configuration from being tracked by running `git update-index --skip-worktree ENV_..._LOCAL.lua` on the corresponding config file.
 
 ### "Copy-a-bookmark" bookmarklet
 
