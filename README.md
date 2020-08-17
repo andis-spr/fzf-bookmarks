@@ -41,7 +41,7 @@ On *nix systems the main config. values are read from `ENV_NIX.lua`, on Windows 
 
 The `ENV_NIX_LOCAL.lua` and `ENV_WIN_LOCAL.lua` files are intended as the real place for setting personal value overrides, as they are read after the main `ENV..` files.
 
-If you choose to update `fzf-bookmarks` via pulling latest commits from GitHub repository and don't want to deal with conflicts, you can exlude your local configuration from being tracked by running `git update-index --skip-worktree ENV_..._LOCAL.lua` on the corresponding config file.
+If you choose to update `fzf-bookmarks` via pulling latest commits from GitHub repository and don't want to deal with conflicts, you can exlude your local configuration from being tracked by running `git update-index --skip-worktree <FILE>` on the corresponding config file.
 
 ### "Copy-a-bookmark" bookmarklet
 
@@ -53,9 +53,9 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 ### Using bookmarks file path command line parameter
 
-The launch scripts `./start.{script-ext.}` accept an optional bookmarks file path parameter, e.g.
+The launch scripts `start.{script-ext.}` accept an optional bookmarks file path parameter, e.g.
 
-`start.sh ~/myfiles/bookmarks` or `start.bat "C:/myfiles/bookmarks"`.
+`start.sh ~/myfiles/bookmarks` / `start.bat "C:/myfiles/bookmarks"`.
 
 This parameter allows setting up different aliases, shortcuts, buttons etc. for different bookmark files.
 
