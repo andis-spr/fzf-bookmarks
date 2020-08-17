@@ -18,7 +18,7 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmar
 
 ## How do I run this?
 
-1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> OR clone the repository ( `git clone git@github.com:andis-spr/fzf-bookmarks.git` ).
+1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> OR clone the repository (`git clone git@github.com:andis-spr/fzf-bookmarks.git`).
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
 3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or create your own.
 
@@ -33,6 +33,14 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmar
 
 ## Usage and tips
 
+### "Copy-a-bookmark" bookmarklet
+
+Save this string as a bookmark in your web browser for conveniently copying page information (the title, URL & description) to your `bookmarks.txt` file.
+
+```
+javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%60%2C%60%24%7Bprepend%7D%24%7Bdocument.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%26%26%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%60)%3B%7D)()%7D)()
+```
+
 ### Configuration
 
 There are bunch of options you can set in configuration files, like changing the bookmarks file location or toggling `fzf` result preview.
@@ -43,15 +51,7 @@ The `ENV_NIX_LOCAL.lua` and `ENV_WIN_LOCAL.lua` files are intended as the real p
 
 If you choose to update `fzf-bookmarks` via pulling latest commits from GitHub repository and don't want to deal with conflicts, you can exlude your local configuration from being tracked by running `git update-index --skip-worktree <FILE>` on the corresponding config file.
 
-### "Copy-a-bookmark" bookmarklet
-
-Save this string as a bookmark in your web browser for conveniently copying page information (the title, URL & description) to your `bookmarks.txt` file.
-
-```
-javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%60%2C%60%24%7Bprepend%7D%24%7Bdocument.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%26%26%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%60)%3B%7D)()%7D)()
-```
-
-### Bookmarks file command-line parameter
+### Bookmarks file path command-line parameter
 
 The launch scripts `start.{script-ext.}` accept an optional bookmarks file path parameter, e.g.
 
