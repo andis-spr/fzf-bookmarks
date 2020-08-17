@@ -16,17 +16,17 @@ I wanted a fast, portable, simple, platform-agnostic bookmarks management interf
 
 On the shoulders of `fzf`, `lua` and *nix text utilities, fzf-bookmarks became a thing. Your'e welcome.
 
-## Running fzf-bookmarks
+## How do I run this?
 
 1. Clone the repository with `git clone git@github.com:andis-spr/fzf-bookmarks.git` or download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a>.
 2. Make sure your system has the <a href="#requirements">necessary packages</a> installed.
-3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or make your own.
+3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or create your own.
 
-### On Windows
+### on Windows
 
 3. Run `start.bat` file.
 
-### On macOS or Linux:
+### on macOS / Linux
 
 3. Set `start.sh` as executable program by running `chmod +x ./start.sh` in fzf-bookmarks directory.
 4. Run `./start.sh` file.
