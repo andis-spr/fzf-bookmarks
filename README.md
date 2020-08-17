@@ -12,7 +12,7 @@ The really simple bookmarks menu.
 
 ## Incentive
 
-I wanted a platform agnostic bookmarks text storage & serch interface and nothing more, as I've had become tired with big clunky GUIs and non-portable storage formats of web browsers. Standing on the shoulders of `lua`, `fzf` and *nix text editing utilities (`sed`, `cat`, `awk`), the `fzf-bookmarks` came into being.
+I wanted a platform agnostic bookmarks management interface, as I've had become tired with clunky GUIs and non-portable storage formats of popular web browsers. On the shoulders of `lua`, `fzf` & *nix text editing utilities, fzf-bookmarks came into being.
 
 ## "Save-a-bookmark"
 
@@ -32,7 +32,7 @@ On macOS and Linux you first have to set `start.sh` as executable program by iss
 
 `start.{script-extension}` accepts a bookmarks file path parameter,
 
-e.g. `start.sh `~/myfiles/bookmarks` or `start.bat "C:/myfiles/bookmarks"`
+e.g. `start.sh ~/myfiles/bookmarks` or `start.bat "C:/myfiles/bookmarks"`(use forward-slashes in both cases).
 
 This allows user to set up different aliases/buttons/shortcuts different bookmark collections.
 
