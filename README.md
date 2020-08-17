@@ -12,18 +12,15 @@ The really simple bookmarks menu.
 
 ## Incentive
 
-I wanted a platform agnostic bookmarks management interface, as I've had become tired with clunky GUIs and non-portable storage formats of popular web browsers. On the shoulders of `lua`, `fzf` & *nix text editing utilities, fzf-bookmarks came into being.
+I wanted a fast, portable, simple, platform-agnostic bookmarks management interface, as I dislike like clunky GUIs and non-so-portable storage formats of popular browsers. What can be better than text file.
 
-## How do I run this?
+On the shoulders of `fzf`, `lua` and *nix text utilities, fzf-bookmarks became a thing. Your'e welcome.
 
-1. Clone the repository by issuing `git clone git@github.com:andis-spr/fzf-bookmarks.git`
+## Running fzf-bookmarks
 
-or
-
-download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a>.
-
-2. Make sure your system has the <a href="/#requirements">required packages</a> installed.,
-
+1. Clone the repository with `git clone git@github.com:andis-spr/fzf-bookmarks.git` 
+ or download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a>.
+2. Make sure your system has the <a href="/#requirements">necessary packages</a> installed.
 3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or make your own.
 
 ### On Windows
