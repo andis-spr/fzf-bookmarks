@@ -18,8 +18,8 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmar
 
 ## How do I run this?
 
-1. Clone the repository with `git clone git@github.com:andis-spr/fzf-bookmarks.git` or download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a>.
-2. Make sure your system has the <a href="#requirements">necessary packages</a> installed.
+1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> OR clone the repository with `git clone git@github.com:andis-spr/fzf-bookmarks.git`.
+2. Make sure your system has the <a href="#requirements">requirements</a> installed.
 3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or create your own.
 
 ### on Windows
@@ -31,7 +31,17 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmar
 3. Set `start.sh` as an executable by running `chmod +x ./start.sh` in your `fzf-bookmarks` directory.
 4. Run `start.sh` file.
 
-## Tips and tricks
+## Usage and tips
+
+### Configuration
+
+There are bunch of options you can set in configuration files, like the bookmarks file location or toggle `fzf` preview.
+
+On *nix systems read configuration from `ENV_NIX.lua` files and Windows respectively from `ENV_WIN.lua`.
+
+The `ENV_NIX_LOCAL.lua` and `ENV_WIN_LOCAL.lua` files are intended as the real place for setting personal settings values, they are read after the main `ENV..` files.
+
+If you want to update `fzf-bookmarks` via pulling latest commits from GitHub repository, you can exlude your local custom configuration being tracked in `git` by running `git update-index --skip-worktree ENV_*_LOCAL.lua` on the corresponding file.
 
 ### "Copy-a-bookmark" bookmarklet
 
