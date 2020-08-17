@@ -8,7 +8,7 @@ The really simple bookmarks menu.
 
 - Manage bookmarks collection via your favorite text editor and version control.
 
-- Portable and made to run from macOS, GNU/Linux and Windows command-line interfaces.
+- Portable and will run from macOS / *BSD, Linux etc. and Windows command-line interfaces.
 
 ## Incentive
 
