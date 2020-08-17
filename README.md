@@ -19,7 +19,7 @@ On the shoulders of `fzf`, `lua` and *nix text utilities, fzf-bookmarks became a
 ## Running fzf-bookmarks
 
 1. Clone the repository with `git clone git@github.com:andis-spr/fzf-bookmarks.git` or download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a>.
-2. Make sure your system has the <a href="/#requirements">necessary packages</a> installed.
+2. Make sure your system has the <a href="#requirements">necessary packages</a> installed.
 3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or make your own.
 
 ### On Windows
@@ -43,13 +43,9 @@ This allows setting up different aliases/shortcuts/button etc. for different boo
 
 ### Windows taskbar shortcut
 
-To have an `fzf-bookmarks` launcher icon you can pin on your Windows taskbar, create a new Shortcut (`Right click --> New --> Shortcut`) with the `Target` field of
+To have a convenient fzf-bookmarks launcher icon on your Windows taskbar, create a new Shortcut with `Right click --> New --> Shortcut`, set the `Target` field to `cmd.exe /c .\start.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
 
-`cmd.exe /c .\start.bat`
-
-and set `Start in` path to `fzf-bookmarks` directory.
-
-Above mentioned bookmarks file command line parameter can be used here.
+Above mentioned bookmarks file command line parameter can also be used here. Normally Windows won't let you pin another launcher because of the same path, but you can wrap it another `.bat` script and make shortcut of that.
 
 ## "Copy-a-bookmark"
 
@@ -66,7 +62,7 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 ### Windows
 
-On Windows you can install these requirements with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
+On Windows you can install these packages with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
 
 ```
 scoop install sed gawk coreutils lua fzf
