@@ -4,7 +4,7 @@ The really simple bookmarks menu.
 
 ## Features
 
-- Launch quickly.
+- Launch quickly!
 
 - Find and select multiple bookmarks for opening them in a web browser.
 
