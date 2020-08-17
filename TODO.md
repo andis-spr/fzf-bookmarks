@@ -1,3 +1,6 @@
-- GIF preview in description
-- Support for opening URLs from Android Termux environment
-- Supercharge with `ripgrep` for having multiple bookmarks.txt files
+Soon:
+- Usage preview GIF in README.
+- Look into support for opening URLs from Android Termux environment.
+
+Later:
+- Supercharge with <a href="https://github.com/BurntSushi/ripgrep">`ripgrep`</a> for searching through multiple bookmark files at once.
