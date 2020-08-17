@@ -14,14 +14,6 @@ The really simple bookmarks menu.
 
 I wanted a platform agnostic bookmarks management interface, as I've had become tired with clunky GUIs and non-portable storage formats of popular web browsers. On the shoulders of `lua`, `fzf` & *nix text editing utilities, fzf-bookmarks came into being.
 
-## "Save-a-bookmark"
-
-Save this string as a bookmark in your web browser for conveniently copying page information (the title, URL & description) to your `bookmarks.txt` file.
-
-```
-javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%60%2C%60%24%7Bprepend%7D%24%7Bdocument.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%26%26%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%60)%3B%7D)()%7D)()
-```
-
 ## How do I run this?
 
 1. Clone the repository by issuing `git clone git@github.com:andis-spr/fzf-bookmarks.git`
@@ -62,6 +54,14 @@ To have an `fzf-bookmarks` launcher icon you can pin on your Windows taskbar, cr
 and set `Start in` path to `fzf-bookmarks` directory.
 
 Above mentioned bookmarks file command line parameter can be used here.
+
+## "Save-a-bookmark"
+
+Save this string as a bookmark in your web browser for conveniently copying page information (the title, URL & description) to your `bookmarks.txt` file.
+
+```
+javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%60%2C%60%24%7Bprepend%7D%24%7Bdocument.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%26%26%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%60)%3B%7D)()%7D)()
+```
 
 ## Requirements
 
