@@ -1,7 +1,25 @@
-#  Loripsum.net - The 'lorem ipsum' generator that doesn't suck.  -  https://loripsum.net/  -  This Lorem Ipsum generator fits all your Lipsum needs! Come on over, make some Lipsum and copy-paste like a pro!  -  
-#  Best practices for using font-weights with web fonts  -  https://www.webtype.com/info/articles/fonts-weights/  -  Best practices for using font-weights with web fonts  -  
-#  Yr - my locations  -  https://www.yr.no/en  -  Today's hourly and 9-day weather forecast from NRK and The Norwegian Meteorological Institute. Search among 10 million places in Norway and the world.  -  
-#  PHP: The Right Way  -  https://phptherightway.com/  -  An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web  -  
-#  Mozilla Observatory  -  https://observatory.mozilla.org/  -  The Mozilla Observatory is a project designed to help developers, system administrators, and security professionals configure their sites safely and securely.  -  
-#  Best practices for using font-weights with web fonts  -  https://www.webtype.com/info/articles/fonts-weights/  -  Best practices for using font-weights with web fonts  -  
-#  50 Watts  -  http://50watts.com/  -  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  -  
+Each bookmark is a single line formatted as follows:
+'#  website title (required)  ~  website address (required)  ~  website description  ~  comma-space separated tags'
+
+e.g.
+#  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
+
+TIP: Add the bookmarklet string from './save-bookmark-bookmarklet' as to browser's toolbar as a quick way to generate these bookmark lines, then you can paste them here.
+
+Bookmark lines begin with '#  ': hash, space x2. Lines like this will be shown in terminal by fuzzy finder and anything else, like these comments and blank lines, is excluded from the search.
+
+First two columns - '#  website title  ~  website address' - are required. Column delimeter is '  ~  ': space x2, tilde, space x2.
+
+Bookmarks organization example:
+
+#  Yr - my locations  ~  https://www.yr.no/en  ~  -  ~  weather, information, forecast
+
+-------- Design Stuff -------
+#  Best practices for using font-weights with web fonts  ~  https://www.webtype.com/info/articles/fonts-weights/  ~  -  ~  guide, design, fonts, web
+#  Loripsum.net - The 'lorem ipsum' generator that doesn't suck.  ~  https://loripsum.net/  ~  This Lorem Ipsum generator fits all your Lipsum needs! Come on over, make some Lipsum and copy-paste like a pro!  ~  lorem-ipsum, design, online-tool
+
+------ Web Development ------ 
+#  Mozilla Observatory  ~  https://observatory.mozilla.org/  ~  The Mozilla Observatory is a project designed to help developers, system administrators, and security professionals configure their sites safely and securely.
+#  PHP: The Right Way  ~  https://phptherightway.com/  ~  An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web  ~  php, web, development, help, guide
+
+...
