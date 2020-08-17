@@ -81,7 +81,7 @@ do
 	end
 
 	local function getBookmarkLines()
-		local handle = io.popen(string.format(CMD_GET_BOOKMARK_LINE, BOOKMARKS_FILE_PATH, FZF_LAYOUT, FZF_PREVIEW_WINDOW))
+		local handle = io.popen(string.format(CMD_GET_BOOKMARK_LINE, BOOKMARKS_FILE_PATH, FZF_LAYOUT, FZF_PREVIEW_WINDOW, FZF_PREVIEW))
 		
 		local result = handle:read("*a")
 		handle:close()
