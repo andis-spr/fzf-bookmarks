@@ -26,15 +26,15 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 On Windows simply execute the `start.bat` file.
 
-On macOS and Linux you first have to set `start.sh` as executable program by issuing `chmod +x ./start.sh` and then you can launch it with `./start.sh`.
+On macOS and Linux you first have to set `start.sh` as executable program by issuing command `chmod +x ./start.sh`, then you can launch it with `./start.sh`.
 
 ### Command line parameters
 
-`start.{script-extension}` accepts a bookmarks file path parameter,
+Launch files `./start.{script-ext.}` accept a bookmarks file path parameter, e.g.
 
-e.g. `start.sh ~/myfiles/bookmarks` or `start.bat "C:/myfiles/bookmarks"`(use forward-slashes in both cases).
+`start.sh ~/myfiles/bookmarks` or `start.bat "C:/myfiles/bookmarks"` (path forward-slashes in both cases).
 
-This allows user to set up different aliases/buttons/shortcuts different bookmark collections.
+This allows having different aliases or shortcuts for different bookmark files.
 
 ### Windows taskbar shortcut
 
