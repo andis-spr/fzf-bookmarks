@@ -51,7 +51,7 @@ The launch scripts `./start.{script-ext.}` accept an optional bookmarks file pat
 
 This allows setting up different aliases/shortcuts/button etc. for different bookmark files.
 
-### Creating Windows taskbar shortcut
+### Creating a Windows taskbar shortcut
 
 To have a convenient launcher icon on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\start.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
 
