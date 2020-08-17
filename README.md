@@ -8,7 +8,7 @@ The really simple bookmarks menu.
 
 - Manage bookmarks collection via your favorite text editor and version control.
 
-- Portable and made to run from macOS, Linux and Windows command-line interfaces.
+- Portable and made to run from macOS, GNU/Linux and Windows command-line interfaces.
 
 ## Incentive
 
@@ -16,7 +16,7 @@ I wanted a fast, portable, simple-to-use & platform-agnostic bookmarks managemen
 
 What can be better than a text file? You're right — nothing!
 
-So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, `fzf-bookmarks` became a thing.
+So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmarks` became a thing.
 
 ## How do I run this?
 
@@ -30,8 +30,8 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, `fzf-bookmarks` 
 
 ### on macOS / Linux
 
-3. Set `start.sh` as executable program by running `chmod +x ./start.sh` in fzf-bookmarks directory.
-4. Run `./start.sh` file.
+3. Set `start.sh` as an executable by running `chmod +x ./start.sh` in your `fzf-bookmarks` directory.
+4. Run `start.sh` file.
 
 ## Tips and tricks
 
