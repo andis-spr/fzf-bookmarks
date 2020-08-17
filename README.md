@@ -35,7 +35,7 @@ So, on the shoulders of `fzf`, `lua` and `*nix text utilities`, the `fzf-bookmar
 
 ### Configuration
 
-There are bunch of options you can set in configuration files, like the bookmarks file location or toggle `fzf` preview.
+There are bunch of options you can set in configuration files, like changing the bookmarks file location or toggling `fzf` result preview.
 
 On *nix systems the main config. values are read from `ENV_NIX.lua`, on Windows respectively - `ENV_WIN.lua`.
 
