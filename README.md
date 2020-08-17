@@ -55,9 +55,9 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 The launch scripts `./start.{script-ext.}` accept an optional bookmarks file path parameter, e.g.
 
-`start.sh ~/myfiles/bookmarks` or `start.bat "C:/myfiles/bookmarks"` (forward-slashes in both cases).
+`start.sh ~/myfiles/bookmarks` or `start.bat "C:/myfiles/bookmarks"`.
 
-This allows setting up different aliases/shortcuts/button etc. for different bookmark files.
+This parameter allows setting up different aliases, shortcuts, buttons etc. for different bookmark files.
 
 ### Creating a Windows taskbar shortcut
 
