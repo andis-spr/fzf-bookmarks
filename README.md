@@ -53,7 +53,7 @@ If you choose to update `fzf-bookmarks` via pulling latest commits from GitHub r
 
 ### Bookmarks file path command-line parameter
 
-The launch scripts `start.{script-ext.}` accept an optional bookmarks file path parameter, e.g.
+The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
 `start.sh ~/myfiles/bookmarks.txt` / `start.bat "C:/myfiles/bookmarks.txt"`.
 
