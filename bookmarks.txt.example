@@ -23,4 +23,4 @@ Bookmarks organization example:
 
 --------------------------------------------
 
-String of JavaScript from './save-bookmark-bookmarklet' can be bookmarked as a link in web browser to quickly generate these fzf-bookmarks lines
+Contents of './save-bookmark-bookmarklet' (inline JavaScript) can be bookmarked as a link in web browser to quickly generate these bookmark lines
