@@ -12,7 +12,7 @@ The really simple bookmarks menu.
 
 ## Incentive
 
-I imagined a fast, portable, searchable, platform-agnostic, no-bells-and-whistles bookmarks management UI, as I grew to dislike everchanging, clunky GUIs and completely non-flexible storage formats of the popular web browsers. What's more simple than a text file really...
+I imagined having a fast, portable, searchable, platform-agnostic, no-bells-and-whistles bookmarks management UI, as I began to dislike the everchanging, clunky GUIs and completely non-flexible storage formats of the popular web browsers. What's more simple than a text file really...
 
 So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bookmarks` became a thing.
 
