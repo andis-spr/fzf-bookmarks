@@ -55,7 +55,7 @@ and set `Start in` path to `fzf-bookmarks` directory.
 
 Above mentioned bookmarks file command line parameter can be used here.
 
-## "Save-a-bookmark"
+## "Copy-a-bookmark"
 
 Save this string as a bookmark in your web browser for conveniently copying page information (the title, URL & description) to your `bookmarks.txt` file.
 
