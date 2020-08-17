@@ -4,6 +4,8 @@ The really simple bookmarks menu.
 
 ## Features
 
+- Launch quickly.
+
 - Find and select multiple bookmarks for opening them in a web browser.
 
 - Manage bookmarks collection via your favorite text editor and version control.
@@ -67,7 +69,7 @@ The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
 `start.sh ~/myfiles/bookmarks.txt` / `start.bat "C:/myfiles/bookmarks.txt"`.
 
-This parameter allows setting up different aliases, shortcuts, buttons etc. for different bookmark files.
+This parameter allows setting up different aliases, keyboard shortcuts, Windows shortcuts, UI buttons etc. for handling different bookmark files. Possibilities are endless!
 
 ### Creating a Windows taskbar shortcut
 
