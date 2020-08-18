@@ -6,11 +6,9 @@ Bookmark line begins with "#  ". The "  ~  " separates information columns.
 as
  #  website title  ~  address  ~  description  ~  tags
 
-First two columns (website title, address) should be present for the fuzzy search and opening in web browser functions to work.
+First two columns (website title, address) should be present, rest (description, tags) are up to the user, as it's simply intended to provide more releavnt information for user and more keywords for the fuzzy finder.
 
-The rest of informaton columns (description, tags) is optional, as it's simply intended provide more keywords to fuzzy finder.
-
-Contents of './save-bookmark-bookmarklet' (inline JavaScript) can be added as a bookmark in web browser used to quickly generate fzf-bookmarks text lines from the opened website data.
+Contents of './save-bookmark-bookmarklet' (inline JavaScript) can be stored as a bookmark in web browser for quickly generating fzf-bookmarks text lines from the opened website data.
 
 ### Bookmarks organization example ###
 
