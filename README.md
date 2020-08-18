@@ -75,8 +75,8 @@ Above mentioned command line parameter can also be used here. Normally Windows w
 
 ## Requirements
 
-- `sed`, `awk`, `cat` — usually included with Unix-like systems, incl. macOS and Linux. For Windows, ses below.
 - <a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>
+- `sed`, `awk`, `cat` — tends to be included with Unix-like systems like macOS and Linux. For Windows, please see below.
 
 ### Windows
 
