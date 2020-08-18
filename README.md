@@ -7,7 +7,7 @@ The really simple bookmarks menu.
 - Find and select multiple bookmarks for opening in the web browser.
 - Manage bookmarks list via your favorite text editor & version control.
 - Portable and launches very quickly.
-- Runs from macOS, *BSD, Linux, HaikuOS etc. & Windows command-line interfaces.
+- Runs from *nix and Windows command-line interfaces.
 
 ## Incentive
 
@@ -31,11 +31,11 @@ Check `bookmarks.txt.example` for more explanation.
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
 3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or create your own.
 
-### on Windows
+### Windows
 
 3. Run the `start.bat` file.
 
-### on *nix (macOS, Linux etc.)
+### *nix (macOS, Linux etc.)
 
 3. Set `start.sh` as an executable by running `chmod +x ./start.sh`.
 4. Run the `start.sh` file.
