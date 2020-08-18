@@ -6,7 +6,7 @@ Platform & browser independent, portable, small, fast, delightful solution for o
 
 - Type and select multiple bookmarks for opening them the web browser.
 - It's plaintext! Manage bookmarks via your favorite text editor & version control.
-- Runs the same in *nix and Windows command-line interfaces.
+- Runs the same in Unix-like system & Windows command-line interfaces.
 
 ## Incentive
 
@@ -34,7 +34,7 @@ Check `bookmarks.txt.example` for more explanation.
 
 3. Run the `start.bat` file.
 
-### *nix (macOS, Linux etc.)
+### Unix-like systems (macOS, Linux etc.)
 
 3. Set `start.sh` as an executable by running `chmod +x ./start.sh`.
 4. Run the `start.sh` file.
@@ -53,7 +53,7 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 There are bunch of options you can set in configuration files, like changing the bookmarks file location or toggling `fzf` result preview.
 
-On *nix systems the main config. values are read from `ENV_NIX.lua`, on Windows respectively - `ENV_WIN.lua`.
+On Unix-like systems the main config. values are read from `ENV_NIX.lua`, on Windows respectively - `ENV_WIN.lua`.
 
 The `ENV_NIX_LOCAL.lua` and `ENV_WIN_LOCAL.lua` files are intended as the real place for setting personal value overrides, as they are read after the main `ENV..` files.
 
@@ -75,7 +75,7 @@ Above mentioned command line parameter can also be used here. Normally Windows w
 
 ## Requirements
 
-- `sed`, `awk`, `cat` — available on majority of *nix-like systems (incl. macOS and Linux). For Windows, se below.
+- `sed`, `awk`, `cat` — usually included with Unix-like systems, incl. macOS and Linux. For Windows, ses below.
 - <a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>
 
 ### Windows
