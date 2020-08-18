@@ -75,8 +75,8 @@ Above mentioned command line parameter can also be used here. Normally Windows w
 
 ## Requirements
 
-- `sed`, `awk`, `cat`
-- `lua`, `fzf`
+- `sed`, `awk`, `cat` — available on majority of *nix-like systems (incl. macOS and Linux). For Windows, se below.
+- <a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>
 
 ### Windows
 
