@@ -87,6 +87,6 @@ Above mentioned command line parameter can also be used here. Normally Windows w
 On Windows you can install these packages with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
 
 ```
-scoop install sed gawk coreutils lua fzf
+scoop install busybox lua fzf
 ```
 Or you can download the binaries from somewhere else and put them inside `dep-bin-win/{package-name}` directories.
