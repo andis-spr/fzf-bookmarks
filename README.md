@@ -77,7 +77,7 @@ Wrap `start.bat` in another `.bat` if you want more than one pinned shortcut ico
 
 ### Windows
 
-On Windows you can install these packages with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
+On Windows you can install these dependencies with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
 
 ```
 scoop install busybox lua fzf
