@@ -1,6 +1,6 @@
 # fzf-bookmarks
 
-The really simple bookmarks menu.
+The really simple website bookmarks menu.
 
 ## Features
 
