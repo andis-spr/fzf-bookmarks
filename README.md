@@ -82,7 +82,7 @@ On Windows you can install these packages with <a href="https://scoop.sh" target
 ```
 scoop install busybox lua fzf
 ```
-You can also put manually downloaded binaries in `dep-bin-win/{package-name}` directories. See links below.
+You can also put manually downloaded binaries in `dep-bin-win/{dependency-name}` directories. See links below.
 
 #### Links to Windows binaries
 - <a href="https://sourceforge.net/projects/luabinaries/files/5.4.0/Tools%20Executables/">`lua`</a>
