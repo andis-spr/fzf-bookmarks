@@ -66,7 +66,9 @@ Useful for having multiple bookmarks collection files, combined with custom alia
 
 ### Creating a Windows taskbar shortcut
 
-To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\start.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar. Wrap `start.bat` in another `.bat.` if you want more than one pinned shortcut icon.
+To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\start.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
+
+Wrap `start.bat` in another `.bat` if you want more than one pinned shortcut icon.
 
 ## Requirements
 
@@ -80,7 +82,8 @@ On Windows you can install these packages with <a href="https://scoop.sh" target
 ```
 scoop install busybox lua fzf
 ```
-Or you can download the binaries from somewhere else and put them inside `dep-bin-win/{package-name}` directories.
+You can also put manually downloaded binaries in `dep-bin-win/{package-name}` directories. See links below.
+
 #### Links to Windows binaries
 - <a href="https://sourceforge.net/projects/luabinaries/files/5.4.0/Tools%20Executables/">`lua`</a>
 - <a href="https://github.com/junegunn/fzf-bin/releases">`fzf`</a>
