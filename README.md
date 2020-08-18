@@ -16,15 +16,14 @@ So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bo
 
 ## The format
 
-Each bookmark is represented a single line in `bookmarks.txt`,  like this:
+One line per bookmark in your `bookmarks.txt`,  like this:
 ```
 #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
 #  PHP: The Right Way  ~  https://phptherightway.com/  ~  An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web  ~  php, web, development, help, guide
 ...
 ```
-Check `bookmarks.txt.example` for more explanation.
 
-## How do I run this?
+## How can I run this?
 
 1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository (`git clone git@github.com:andis-spr/fzf-bookmarks.git`).
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
