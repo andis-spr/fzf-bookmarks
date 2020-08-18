@@ -52,7 +52,7 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 The `ENV_NIX_LOCAL.lua` (*nix config.) and the `ENV_WIN_LOCAL.lua` (Windows config.) files are intended as the real place for setting personal value overrides, as they are read after the main `ENV_*.lua` files.
 
-If you want to update `fzf-bookmarks` via `git`, you can exlude your `LOCAL` configuration file changes from being tracked by running `git update-index --skip-worktree <FILENAME>` on the corresponding file.
+If you want to update `fzf-bookmarks` via `git`, you can exlude your `*_LOCAL` configuration file changes from being tracked by running `git update-index --skip-worktree <FILENAME>` on the corresponding file.
 
 ### Bookmarks file path command-line parameter
 
