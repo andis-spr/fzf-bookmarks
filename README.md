@@ -1,17 +1,16 @@
 # fzf-bookmarks
 
-The really simple website bookmarks menu.
+Platform-agnostic, browser-independent, portable, small and also fast solution for organizing your web bookmarks.
 
 ## Features
 
-- Find and select multiple bookmarks for opening in the web browser.
-- Manage bookmarks list via your favorite text editor & version control.
-- Portable and launches very quickly.
-- Runs from *nix and Windows command-line interfaces.
+- Type and select multiple bookmarks for opening them the web browser.
+- It's plaintext! Manage bookmarks via your favorite text editor & version control.
+- Runs the same in *nix and Windows command-line interfaces.
 
 ## Incentive
 
-I imagined having a fast, portable, searchable, platform-agnostic, no-bells-and-whistles bookmarks management UI, as I really began to dislike the everchanging, clunky GUIs and completely non-flexible storage formats of the popular web-browsers. What's more simple than a text file really...
+I began to grow tired with everchanging, clunky graphical interfaces and completely non-flexible storage formats of the popular web-browsers and wanted a simple bookmarks management tool somewhat independent from these browsers. What's more simple than a text file really...
 
 So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bookmarks` became a thing.
 
