@@ -90,3 +90,6 @@ On Windows you can install these packages with <a href="https://scoop.sh" target
 scoop install busybox lua fzf
 ```
 Or you can download the binaries from somewhere else and put them inside `dep-bin-win/{package-name}` directories.
+- `<a href="https://sourceforge.net/projects/luabinaries/files/5.4.0/Tools%20Executables/">lua</a>`
+- `<a href="https://github.com/junegunn/fzf-bin/releases">fzf</a>`
+- `sed`, `awk`, `cat` are found either in `<a href="https://frippery.org/busybox/">busybox</a>` or <a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">coreutils</a>` + `<a href="http://gnuwin32.sourceforge.net/packages/gawk.htm">gawk</a>` packages.
