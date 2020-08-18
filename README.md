@@ -16,8 +16,10 @@ So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bo
 
 ## The format
 
-One line per bookmark in your `bookmarks.txt`,  like this:
+One bookmark per line in your `bookmarks.mx.txt`, like this:
 ```
+***bookmarks-mx***
+
 #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
 #  PHP: The Right Way  ~  https://phptherightway.com/  ~  An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web  ~  php, web, development, help, guide
 ...
@@ -27,7 +29,7 @@ One line per bookmark in your `bookmarks.txt`,  like this:
 
 1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository (`git clone git@github.com:andis-spr/fzf-bookmarks.git`).
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
-3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or create your own.
+3. Rename `./bookmarks.example.mx.txt` to `bookmarks.mx.txt` or create your own.
 
 ### Windows
 
@@ -42,7 +44,7 @@ One line per bookmark in your `bookmarks.txt`,  like this:
 
 ### "Copy-a-bookmark" bookmarklet
 
-Save this string as a bookmark in your web-browser for conveniently copying page information (the title, URL & description) to your `bookmarks.txt` file.
+Save this string as a bookmark in your web-browser for conveniently copying page information (the title, URL & description) to your `bookmarks.mx.txt` file.
 
 ```
 javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%60%2C%60%24%7Bprepend%7D%24%7Bdocument.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%26%26%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%60)%3B%7D)()%7D)()
@@ -58,7 +60,7 @@ If you want to update `fzf-bookmarks` via `git`, you can exlude your `*_LOCAL` c
 
 The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
-`start.sh ~/myfiles/bookmarks.txt` / `start.bat "C:/myfiles/bookmarks.txt"`.
+`start.sh ~/myfiles/bookmarks.mx.txt` / `start.bat "C:/myfiles/bookmarks.mx.txt"`.
 
 This parameter allows setting up different aliases, keyboard shortcuts, Windows shortcuts, UI buttons etc. for handling different bookmark files. Possibilities are endless!
 
@@ -71,7 +73,7 @@ Above mentioned command line parameter can also be used here. Normally Windows w
 ## Requirements
 
 - <a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>
-- `sed`, `awk`, `cat` — tend to be included with Unix-like systems like macOS and Linux. For Windows see below.
+- `printf`, `sed`, `awk`, `cat` — tend to be included with Unix-like systems like macOS and Linux. For Windows see below.
 
 ### Windows
 
@@ -84,4 +86,4 @@ Or you can download the binaries from somewhere else and put them inside `dep-bi
 #### Links to Windows binaries
 - <a href="https://sourceforge.net/projects/luabinaries/files/5.4.0/Tools%20Executables/">`lua`</a>
 - <a href="https://github.com/junegunn/fzf-bin/releases">`fzf`</a>
-- `sed`, `awk`, `cat` can be found either in <a href="https://frippery.org/busybox/">`busybox`</a> or in GNU <a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">`coreutils`</a> + <a href="http://gnuwin32.sourceforge.net/packages/gawk.htm">`gawk`</a> packages.
+- `printf`, `sed`, `awk`, `cat` can be found either in <a href="https://frippery.org/busybox/">`busybox`</a> or in GNU <a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">`coreutils`</a> + <a href="http://gnuwin32.sourceforge.net/packages/gawk.htm">`gawk`</a> packages.

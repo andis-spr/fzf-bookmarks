@@ -1,6 +1,6 @@
 -- Default settings on *nix systems:
 
-BOOKMARKS_FILE_PATH="./bookmarks.txt"
+BOOKMARKS_FILE_PATH="./bookmarks.mx.txt"
 
 -- BROWSER_CMD="sensible-browser %s"
 -- BROWSER_CMD="epiphany %s"

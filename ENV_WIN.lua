@@ -1,6 +1,6 @@
 -- Default settings on Windows systems:
 
-BOOKMARKS_FILE_PATH="./bookmarks.txt"
+BOOKMARKS_FILE_PATH="./bookmarks.mx.txt"
 
 -- BROWSER_CMD="start %s"
 -- BROWSER_CMD="start chrome %s"
