@@ -73,7 +73,7 @@ Wrap `start.bat` in another `.bat` if you want more than one pinned shortcut ico
 ## Requirements
 
 - <a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>
-- `printf`, `sed`, `awk`, `cat` — usually included with Unix-like systems like macOS and Linux. For Windows see below.
+- `printf`, `sed`, `awk`, `cat` are usually included with Unix-like systems like macOS and Linux. For Windows see below.
 
 ### Windows
 
