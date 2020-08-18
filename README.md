@@ -5,11 +5,8 @@ The really simple bookmarks menu.
 ## Features
 
 - Find and select multiple bookmarks for opening in the web browser.
-
 - Manage bookmarks list via your favorite text editor & version control.
-
-- Portable and launches quickly.
-
+- Portable and launches very quickly.
 - Runs from macOS, *BSD, Linux, HaikuOS etc. & Windows command-line interfaces.
 
 ## Incentive
