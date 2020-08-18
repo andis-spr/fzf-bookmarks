@@ -4,23 +4,23 @@ The really simple bookmarks menu.
 
 ## Features
 
-- Launch quickly.
+- Find and select multiple bookmarks for opening in the web browser.
 
-- Find and select multiple bookmarks for opening them in a web browser.
+- Manage bookmarks list via your favorite text editor & version control.
 
-- Manage bookmarks collection via your favorite text editor and version control.
+- Portable and launches quickly.
 
-- Portable and runs from macOS / *BSD, Linux etc. and Windows command-line interfaces.
+- Runs from macOS, *BSD, Linux, HaikuOS etc. & Windows command-line interfaces.
 
 ## Incentive
 
-I imagined having a fast, portable, searchable, platform-agnostic, no-bells-and-whistles bookmarks management UI, as I began to dislike the everchanging, clunky GUIs and completely non-flexible storage formats of the popular web browsers. What's more simple than a text file really...
+I imagined having a fast, portable, searchable, platform-agnostic, no-bells-and-whistles bookmarks management UI, as I really began to dislike the everchanging, clunky GUIs and completely non-flexible storage formats of the popular web-browsers. What's more simple than a text file really...
 
 So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bookmarks` became a thing.
 
 ## The format
 
-Each bookmark is represented in `bookmarks.txt` as a single line, like this:
+Each bookmark is represented a single line in `bookmarks.txt`,  like this:
 ```
 #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
 #  PHP: The Right Way  ~  https://phptherightway.com/  ~  An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web  ~  php, web, development, help, guide
@@ -30,24 +30,24 @@ Check `bookmarks.txt.example` for more explanation.
 
 ## How do I run this?
 
-1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> OR clone the repository (`git clone git@github.com:andis-spr/fzf-bookmarks.git`).
+1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository (`git clone git@github.com:andis-spr/fzf-bookmarks.git`).
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
 3. Rename `./bookmarks.txt.example` to `bookmarks.txt` or create your own.
 
 ### on Windows
 
-3. Run `start.bat` file.
+3. Run the `start.bat` file.
 
 ### on macOS / Linux
 
-3. Set `start.sh` as an executable by running `chmod +x ./start.sh` in your `fzf-bookmarks` directory.
-4. Run `start.sh` file.
+3. Set `start.sh` as an executable by running `chmod +x ./start.sh`.
+4. Run the `start.sh` file.
 
 ## Usage and tips
 
 ### "Copy-a-bookmark" bookmarklet
 
-Save this string as a bookmark in your web browser for conveniently copying page information (the title, URL & description) to your `bookmarks.txt` file.
+Save this string as a bookmark in your web-browser for conveniently copying page information (the title, URL & description) to your `bookmarks.txt` file.
 
 ```
 javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%60%2C%60%24%7Bprepend%7D%24%7Bdocument.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%26%26%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%7D%24%7BcolDelimeter%7D%60)%3B%7D)()%7D)()
