@@ -1,5 +1,7 @@
 BOOKMARKS.txt
 bookmarks.txt
+BOOKMARKS.mx.txt
+bookmarks.mx.txt
 dep-bin-win/awk/*
 !dep-bin-win/awk/.gitkeep
 dep-bin-win/sed/*
@@ -10,3 +12,5 @@ dep-bin-win/lua/*
 !dep-bin-win/lua/.gitkeep
 dep-bin-win/cat/*
 !dep-bin-win/cat/.gitkeep
+dep-bin-win/printf/*
+!dep-bin-win/printf/.gitkeep
