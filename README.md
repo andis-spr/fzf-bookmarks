@@ -38,7 +38,7 @@ Check `bookmarks.txt.example` for more explanation.
 
 3. Run the `start.bat` file.
 
-### on macOS / Linux
+### on *nix (macOS, Linux etc.)
 
 3. Set `start.sh` as an executable by running `chmod +x ./start.sh`.
 4. Run the `start.sh` file.
