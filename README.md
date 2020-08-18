@@ -66,7 +66,7 @@ Useful for having multiple bookmarks collection files, combined with custom alia
 
 ### Creating a Windows taskbar shortcut
 
-To have a convenient launcher icon on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\start.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar. Wrap `start.bat` in another `.bat.` if you want more than one pinned shortcut icon.
+To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\start.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar. Wrap `start.bat` in another `.bat.` if you want more than one pinned shortcut icon.
 
 ## Requirements
 
