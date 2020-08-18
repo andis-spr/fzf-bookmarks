@@ -50,13 +50,9 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 ### Configuration
 
-There are bunch of options you can set in configuration files, like changing the bookmarks file location or toggling `fzf` result preview.
+The `ENV_NIX_LOCAL.lua` (*nix config.) and the `ENV_WIN_LOCAL.lua` (Windows config.) files are intended as the real place for setting personal value overrides, as they are read after the main `ENV_*.lua` files.
 
-On Unix-like systems the main config. values are read from `ENV_NIX.lua`, on Windows respectively - `ENV_WIN.lua`.
-
-The `ENV_NIX_LOCAL.lua` and `ENV_WIN_LOCAL.lua` files are intended as the real place for setting personal value overrides, as they are read after the main `ENV..` files.
-
-If you choose to update `fzf-bookmarks` via pulling latest commits from GitHub repository and don't want to deal with conflicts, you can exlude your local configuration from being tracked by running `git update-index --skip-worktree <FILE>` on the corresponding config file.
+If you choose to update `fzf-bookmarks` via pulling latest commits from GitHub repository and don't want to deal with conflicts, you can exlude your `LOCAL` configuration from being tracked by running `git update-index --skip-worktree <FILE>` on the corresponding file.
 
 ### Bookmarks file path command-line parameter
 
