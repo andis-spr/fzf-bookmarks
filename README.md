@@ -1,6 +1,6 @@
 # fzf-bookmarks
 
-Platform-agnostic, browser-independent, portable, small and also fast solution for organizing your web bookmarks.
+Platform & browser independent, portable, small, fast, delightful solution for organizing web bookmarks.
 
 ## Features
 

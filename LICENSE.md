@@ -1,4 +1,4 @@
-fzf-bookmarks - The really simple web bookmarks menu.
+fzf-bookmarks - The really simple, browser-independent web bookmarks menu.
 
 Copyright © 2020 Andis Spriņķis
 
