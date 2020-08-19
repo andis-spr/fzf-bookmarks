@@ -36,6 +36,12 @@ Copy and paste a ready-made bookmark string to your `bookmarks.txt` file via thi
 javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20metaKeywords%20%3D%20document.querySelector(%60meta%5Bname%3D%22keywords%22%5D%60)%3Bconst%20title%20%3D%20document.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%20bookmark%60%2C%60%24%7Bprepend%7D%24%7Btitle.length%20%3E%200%20%3F%20title%20%3A%20window.location.hostname%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%3F%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%20%3A%20'-'%7D%24%7BcolDelimeter%7D%24%7BmetaKeywords%20%3F%20metaKeywords.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%20%3A%20'-'%7D%60)%3B%7D)()%7D)()
 ```
 
+### Windows taskbar shortcut
+
+To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\fzfb.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
+
+Wrap `fzfb.bat` in another `.bat` if you want more than one pinned shortcut icon.
+
 ### File path launch parameter
 
 The `start` scripts accept an optional bookmarks file path parameter, e.g.
@@ -44,11 +50,6 @@ The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
 Useful for having multiple bookmarks collection files, combined with custom aliases and launchers.
 
-### Windows taskbar shortcut
-
-To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\fzfb.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
-
-Wrap `fzfb.bat` in another `.bat` if you want more than one pinned shortcut icon.
 
 ## Requirements
 
