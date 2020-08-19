@@ -36,7 +36,7 @@ So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bo
 
 ### Unix-like systems (macOS, Linux etc.)
 
-4. Set `fzfb` as an executable by running `chmod +x ./fzfb` then run `./fzfb`.
+4. Set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
 
 ## Some usage tips
 
