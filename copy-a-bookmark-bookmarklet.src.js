@@ -1,15 +1,18 @@
 (() => {
     const metaDescription = document.querySelector(`meta[name="description"]`);
+    const metaKeywords = document.querySelector(`meta[name="keywords"]`);
+    const title = document.title.replace(/\s+/g, ` `).trim();
     const prepend = `#  `;
     const colDelimeter = `  ~  `;
     prompt(
-        `Copy this`,
+        `Copy this bookmark`,
         `${prepend}
-        ${document.title.replace(/\s+/g, ` `).trim()}
+        ${title.length > 0 ? title : window.location.hostname}
         ${colDelimeter}
         ${window.location}
         ${colDelimeter}
-        ${metaDescription && metaDescription.content.replace(/\s+/g, ` `).trim()}
-        ${colDelimeter}`
+        ${metaDescription ? metaDescription.content.replace(/\s+/g, ` `).trim() : '-'}
+        ${colDelimeter}
+        ${metaKeywords ? metaKeywords.content.replace(/\s+/g, ` `).trim() : '-'}`
     );
 })()
