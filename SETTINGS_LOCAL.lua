@@ -1,4 +1,2 @@
--- Put your personal settings here.
--- Refer to SETTINGS_DEFAULT.lua for default values.
-
-BROWSER_CMD="firefox -new-tab %s"
+-- Put your personal settings here. Refer to SETTINGS_DEFAULT.lua for the default values.
+-- e.g. BROWSER_CMD="start firefox -new-tab %s"
