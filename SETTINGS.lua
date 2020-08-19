@@ -22,7 +22,7 @@ else
 end
 
 -- BOOKMARKS - Path to your bookmarks file.
-BOOKMARKS_FILE="./bookmarks.mx.txt"
+BOOKMARKS_FILE="./example-bookmarks.fzb.txt"
 -- You can also pass this path as a parameter to start[.sh|.bat].
 
 -- BROWSER_CMD_IS_SEQ - determines what pressing Enter on selected bookmarks does:

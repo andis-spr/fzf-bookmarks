@@ -1,2 +1,5 @@
--- Put your personal settings here. Refer to SETTINGS_DEFAULT.lua for the default values.
--- e.g. BROWSER_CMD="start firefox -new-tab %s"
+-- Put your personal settings here, e.g.
+-- BOOKMARKS_FILE="./example-bookmarks.fzb.txt"
+-- BROWSER_CMD="start firefox -new-tab %s"
+-- ...
+-- Refer to SETTINGS_DEFAULT.lua for the default values.
