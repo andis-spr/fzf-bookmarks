@@ -16,7 +16,7 @@ So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bo
 
 ## The bookmarks
 
-One bookmark per line in your `bookmarks.mx.txt`, like this:
+`bookmarks.mx.txt` with one bookmark per line, like this:
 ```
 #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
 #  DigitalOcean  ~  https://cloud.digitalocean.com/login  ~  Helping millions of developers easily build, test, manage, and scale applications of any size – faster than ever before.  ~  
