@@ -3,6 +3,10 @@ function file_exists(name)
    if f~=nil then io.close(f) return true else return false end
 end
 
+function trim(s)
+   return (s:gsub("^%s*(.-)%s*$", "%1"))
+end
+
 function magiclines(str)
     local pos = 1;
     return function()
@@ -18,7 +22,11 @@ function magiclines(str)
         end
         return line
     end
-end   
+end
+
+function is_int(n)
+  return (type(n) == "number") and (math.floor(n) == n)
+end
 
 do
     require('SETTINGS')
@@ -42,49 +50,6 @@ do
         BOOKMARKS_FILE = arg[1]
     end
    
-    
-    local function getURLFromBookmark(bookmark)
-        local handle = io.popen(string.format(CMD_EXTRACT_URL, bookmark))
-        local result = handle:read("*a")
-        handle:close()
-        return result
-    end
-    
-    local function getURLBrowserCMD(url)
-        return string.format(BROWSER_CMD, url)
-    end
-
-    local function bookmarksInBrowser(bookmarks)
-        if (BROWSER_CMD_IS_SEQ == true)
-        then
-            for bookmark in magiclines(bookmarks) do
-                if (string.len(bookmark) > 0)
-                then
-                    local url = getURLFromBookmark(bookmark)
-                    if (not(string.len(url) == 0))
-                    then
-                        local browserCMD = getURLBrowserCMD(url)
-                        os.execute(string.format(CMD_OPEN_URL_IN_BROWSER, browserCMD))
-                    end
-                end
-            end
-        else
-            local URLstring = ""
-            for bookmark in magiclines(bookmarks) do
-                if (string.len(bookmark) > 0)
-                then
-                    local url = string.gsub(getURLFromBookmark(bookmark), "\n", "") 
-                    URLstring = URLstring.." "..url
-                end
-            end
-            local browserCMD = getURLBrowserCMD(URLstring)
-            if (not(string.len(URLstring) == 0))
-            then
-                os.execute(string.format(CMD_OPEN_URL_IN_BROWSER, browserCMD))
-            end
-        end
-    end
-
     local function getBookmarkLines()
         local handle = io.popen(string.format(CMD_GET_BOOKMARK_LINE, BOOKMARKS_FILE, FZF_LAYOUT, FZF_PREVIEW_WINDOW, FZF_PREVIEW))
         
@@ -93,6 +58,85 @@ do
         return result
     end
 
-    local bookmarks = getBookmarkLines()
-    bookmarksInBrowser(bookmarks)
+    
+    local function getURLFromBookmark(bookmark)
+        local handle = io.popen(string.format(CMD_EXTRACT_URL, bookmark))
+        local result = handle:read("*a")
+        handle:close()
+        return result
+    end
+
+    local function selectBrowserCMD()
+        if #BROWSER_CMD > 0
+        then
+            io.write('\n Select a browser (press ENTER for default):\n\n')
+            for index,value in ipairs(BROWSER_CMD) do
+                if index == 1
+                then
+                    io.write('  ',index, ": ", value, " (default)\n" );
+                else
+                    io.write('  ',index, ": ", value, "\n" );
+                end
+            end
+            io.write('\n> ')
+
+            local indexInput = io.read()
+            local CMDIndex = 1
+
+            if (is_int(tonumber(indexInput)))
+            then
+                CMDIndex = tonumber(indexInput)
+            else
+                CMDIndex = 1
+            end
+            io.write('Opening URLs in ', BROWSER_CMD[CMDIndex], '...\n')
+            return BROWSER_CMD[CMDIndex]
+        else
+            error("No browsers have been specified")
+        end
+    end
+    
+    local function formatURLToBrowserCMD(url, cmd)
+        return string.format(cmd, url)
+    end
+
+    local function bookmarksToBrowser(bookmarks)
+        local browserCMD;
+
+        if string.len(bookmarks) ~= 0
+        then
+            browserCMD = selectBrowserCMD()
+
+            if (BROWSER_CMD_IS_SEQ == true)
+            then
+                for bookmark in magiclines(bookmarks) do
+                    if (string.len(bookmark) > 0)
+                    then
+                        local url = getURLFromBookmark(bookmark)
+                        if (not(string.len(url) == 0))
+                        then
+                            local browserCMDWithURL = formatURLToBrowserCMD(url, browserCMD)
+                            os.execute(string.format(CMD_OPEN_URL_IN_BROWSER, browserCMDWithURL))
+                        end
+                    end
+                end
+            else
+                local URLstring = ""
+                for bookmark in magiclines(bookmarks) do
+                    if (string.len(bookmark) > 0)
+                    then
+                        local url = string.gsub(getURLFromBookmark(bookmark), "\n", "") 
+                        URLstring = URLstring.." "..url
+                    end
+                end
+                local browserCMDWithURL = formatURLToBrowserCMD(URLstring, browserCMD)
+                if (not(string.len(URLstring) == 0))
+                then
+                    os.execute(string.format(CMD_OPEN_URL_IN_BROWSER, browserCMDWithURL))
+                end
+            end
+        end
+    end
+
+    bookmarksToBrowser(getBookmarkLines())
 end

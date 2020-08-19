@@ -1,24 +1,25 @@
 -- SETTINGS_DEFAULT.lua - Default configuration values for fzf-bookmarks.
 
 -- TIP: Your personal ovverides of these values can go into SETTINGS_LOCAL.lua.
-
--- BROWSER_CMD -- command for sending bookmark link to web browser
+--
+-- BROWSER_CMDS: A list of available web browsers.
 if package.config:sub(1,1) == '/' -- (Determine system by checking the path separator.)
 then
     -- Assume a Unix-like system e.g. GNU/Linux, macOS --
-
-    -- BROWSER_CMD="chrome %s"
-    -- BROWSER_CMD="firefox -new-tab %s"
-    -- BROWSER_CMD="safari %s"
-    -- BROWSER_CMD="epiphany %s"
-    BROWSER_CMD="sensible-browser %s" -- Debian/*buntu GNU/Linux symlink to an installed default browser
+    BROWSER_CMD = {
+        "chrome %s",
+        "firefox -new-tab %s",
+        "sensible-browser %s", -- Debian/*buntu GNU/Linux symlink to an installed default browser
+        "safari %s"
+    }
 else
     -- Assume a Microsoft Windows system --
-
-    -- BROWSER_CMD="start chrome %s"
-    -- BROWSER_CMD="start edge %s"
-    -- BROWSER_CMD="start firefox -new-tab %s"
-    BROWSER_CMD="start %s" -- Point to Windows default http/s URL handler
+    BROWSER_CMD = {
+        "start chrome %s",
+        "start firefox -new-tab %s",
+        "start edge %s",
+        "start %s", -- Point to Windows default http/s URL handler
+    }
 end
 
 -- BOOKMARKS_FILE - Path to your bookmarks file.
@@ -34,7 +35,7 @@ end
 -- BROWSER_CMD_IS_SEQ - determines what pressing Enter on selected bookmarks does:
 -- true - repeats BROWSER_CMD call for each link individually;
 -- false - bookmark links are passed as a space-delimeted argument to single BROWSER_CMD call;
-BROWSER_CMD_IS_SEQ=true
+BROWSER_CMD_IS_SEQ=false
 
 -- fzf parameters. Check fzf manual for more information on these.
 FZF_PREVIEW=true
