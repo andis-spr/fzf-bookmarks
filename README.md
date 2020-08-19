@@ -12,8 +12,6 @@ Platform & browser independent, portable, small, fast, delightful solution for o
 
 I'm not too fond of everchanging, opinionated browser UIs and wanted something portable and simple.
 
-So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bookmarks` became a thing.
-
 ## The bookmarks
 
 `bookmarks.fzb.txt` with one bookmark per line, like this:
