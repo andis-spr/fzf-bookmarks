@@ -21,9 +21,16 @@ else
     BROWSER_CMD="start %s" -- Point to Windows default http/s URL handler
 end
 
--- BOOKMARKS - Path to your bookmarks file.
-BOOKMARKS_FILE="./example-bookmarks.fzb.txt"
--- You can also pass this path as a parameter to start[.sh|.bat].
+-- BOOKMARKS_FILE - Path to your bookmarks file.
+require('lua/file-exists');
+if (file_exists('bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
+then
+    BOOKMARKS_FILE="./bookmarks.txt"
+else
+    BOOKMARKS_FILE="./example.bookmarks.txt"
+end
+-- You can also pass this path as a parameter to fzfb[.bat].
+
 
 -- BROWSER_CMD_IS_SEQ - determines what pressing Enter on selected bookmarks does:
 -- true - repeats BROWSER_CMD call for each link individually;

@@ -1,7 +1,5 @@
 BOOKMARKS.txt
 bookmarks.txt
-BOOKMARKS.mx.txt
-bookmarks.mx.txt
 dependencies-win/awk/*
 !dependencies-win/awk/.gitkeep
 dependencies-win/sed/*
