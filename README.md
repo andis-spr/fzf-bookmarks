@@ -22,9 +22,7 @@ One bookmark per line in `bookmarks.txt`, e.g.
 
 1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally and make sure your system has the <a href="#requirements">required packages</a> installed.
 
-### Windows
-
-2. On Windows — just run the `fzfb.bat` file. On Unix-like systems — set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
+2. **On Windows** — just run the `fzfb.bat` file. **On Unix-like systems** — set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
 
 3. Create your own `bookmarks.txt` file and try populating it (check out `example.bookmarks.txt`).
 
