@@ -8,10 +8,6 @@ Platform & browser independent, portable, small, fast, delightful solution for o
 - It's plaintext! Manage bookmarks via your favorite text editor & version control.
 - Runs the same in Unix-like system & Windows command-line interfaces.
 
-## Incentive
-
-I'm not too fond of everchanging, opinionated browser UIs and wanted something portable and simple.
-
 ## Bookmarks
 
 One bookmark per line in `bookmarks.txt`, e.g.
