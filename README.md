@@ -5,7 +5,7 @@ Platform & browser independent, portable, small, fast, delightful solution for o
 ## Features
 
 - Type and select multiple bookmarks for opening them the web browser.
-- It's plaintext! Manage bookmarks via your favorite text editor & version control.
+- It's all plaintext! Manage bookmarks via your favorite text editor & version control.
 - Runs the same in Unix-like system & Windows command-line interfaces.
 
 ## Bookmarks
