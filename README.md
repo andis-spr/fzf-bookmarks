@@ -24,7 +24,7 @@ One bookmark per line in `bookmarks.txt`, e.g.
 
 2. **On Windows** — just run the `fzfb.bat` file. **On Unix-like systems** — set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
 
-3. Create your own `bookmarks.txt` file and try populating it (check out `example.bookmarks.txt`).
+Once your familiar with the interface, create your own `bookmarks.txt` file and try populating it (check out `example.bookmarks.txt`).
 
 ## Tips and tricks
 
