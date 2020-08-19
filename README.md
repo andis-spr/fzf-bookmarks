@@ -26,17 +26,16 @@ So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bo
 
 ## How do I run this?
 
-1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally.
-2. Make sure your system has the <a href="#requirements">required packages</a> installed.
-3. Set your `BROWSER_CMD` and point to your own `BOOKMARKS_FILE` in `SETTINGS_LOCAL.lua`.
+1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally and make sure your system has the <a href="#requirements">required packages</a> installed.
+2. Set your `BROWSER_CMD` and point to your own `BOOKMARKS_FILE` in `SETTINGS_LOCAL.lua`.
 
 ### Windows
 
-4. Run the `fzfb.bat` file.
+3. Run the `fzfb.bat` file.
 
 ### Unix-like systems (macOS, Linux etc.)
 
-4. Set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
+3. Set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
 
 ## Some usage tips
 
