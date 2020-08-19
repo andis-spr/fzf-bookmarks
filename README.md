@@ -75,8 +75,7 @@ On Windows you can install these dependencies with <a href="https://scoop.sh" ta
 ```
 scoop install busybox lua fzf
 ```
-You can also put manually downloaded binaries in `dependencies-win/{dependency-name}` directories. See links below.
-
+You can also put manually downloaded binaries in `dependencies-win/{dependency-name}` directories.
 #### Links to Windows binaries
 - <a href="https://sourceforge.net/projects/luabinaries/files/5.4.0/Tools%20Executables/">`lua`</a>
 - <a href="https://github.com/junegunn/fzf-bin/releases">`fzf`</a>
