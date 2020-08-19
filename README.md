@@ -18,7 +18,7 @@ One bookmark per line in `bookmarks.txt`, e.g.
 ...
 ```
 
-## Running fzf-bookmarks
+## Running
 
 1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally and make sure your system has the <a href="#requirements">required packages</a> installed.
 
