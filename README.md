@@ -10,7 +10,7 @@ Platform & browser independent, portable, small, fast, delightful solution for o
 
 ## Incentive
 
-I'm not too fond of everchanging browser UIs and I wanted something simple and portable.
+I'm not too fond of everchanging, opinionated browser UIs and wanted something portable and simple.
 
 So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bookmarks` became a thing.
 
