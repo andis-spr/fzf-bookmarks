@@ -48,9 +48,6 @@ The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
 `fzfb ~/myfiles/bookmarks.txt` / `fzfb.bat "C:/myfiles/bookmarks.txt"`.
 
-Useful for having multiple bookmarks collection files, combined with custom aliases and launchers.
-
-
 ## Requirements
 
 - <a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>
