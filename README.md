@@ -14,7 +14,7 @@ I'm not too fond of everchanging, opinionated browser UIs and wanted something p
 
 So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bookmarks` became a thing.
 
-## The format
+## The bookmarks
 
 One bookmark per line in your `bookmarks.mx.txt`, like this:
 ```
@@ -24,7 +24,7 @@ One bookmark per line in your `bookmarks.mx.txt`, like this:
 ...
 ```
 
-## How can I run this?
+## How do I run this?
 
 1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally.
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
@@ -39,7 +39,7 @@ One bookmark per line in your `bookmarks.mx.txt`, like this:
 3. Set `fzfb` as an executable by running `chmod +x ./fzfb`.
 4. Run the `fzfb` file.
 
-## Usage and tips
+## Some usage tips
 
 ### "Copy-a-bookmark" bookmarklet
 
