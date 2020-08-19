@@ -10,7 +10,7 @@ Platform & browser independent, portable, small, fast, delightful solution for o
 
 ## Incentive
 
-I began to grow tired with everchanging, clunky graphical interfaces and completely non-flexible storage formats of the popular web-browsers and wanted a simple bookmarks management tool, somewhat independent from decisions of these browser vendors. What's more simple than a text file really...
+I'm not too fond of everchanging browser UIs and I wanted something simple and portable.
 
 So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bookmarks` became a thing.
 
