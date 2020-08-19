@@ -32,12 +32,12 @@ One bookmark per line in your `bookmarks.mx.txt`, like this:
 
 ### Windows
 
-3. Run the `start.bat` file.
+3. Run the `fzfb.bat` file.
 
 ### Unix-like systems (macOS, Linux etc.)
 
-3. Set `start.sh` as an executable by running `chmod +x ./start.sh`.
-4. Run the `start.sh` file.
+3. Set `fzfb` as an executable by running `chmod +x ./fzfb`.
+4. Run the `fzfb` file.
 
 ## Usage and tips
 
@@ -53,15 +53,15 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
-`start.sh ~/myfiles/bookmarks.mx.txt` / `start.bat "C:/myfiles/bookmarks.mx.txt"`.
+`fzfb ~/myfiles/bookmarks.mx.txt` / `fzfb.bat "C:/myfiles/bookmarks.mx.txt"`.
 
 Useful for having multiple bookmarks collection files, combined with custom aliases and launchers.
 
 ### Creating a Windows taskbar shortcut
 
-To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\start.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
+To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\fzfb.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
 
-Wrap `start.bat` in another `.bat` if you want more than one pinned shortcut icon.
+Wrap `fzfb.bat` in another `.bat` if you want more than one pinned shortcut icon.
 
 ## Requirements
 
