@@ -51,9 +51,9 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 ### Configuration
 
-The `ENV_NIX_LOCAL.lua` (*nix config.) and the `ENV_WIN_LOCAL.lua` (Windows config.) files are intended as the real place for setting personal value overrides, as they are read after the main `ENV_*.lua` files.
+`ENV_LOCAL.lua` is the intended place for personal settings overrides. Refer to `ENV.lua` for the default values you can change.
 
-If you want to update `fzf-bookmarks` via `git`, you can exlude your `*_LOCAL` configuration file changes from being tracked by running `git update-index --skip-worktree <FILENAME>` on the corresponding file.
+If you want to update `fzf-bookmarks` via `git`, you can exlude your `ENV_LOCAL.lua` configuration file changes from being tracked by running `git update-index --skip-worktree ENV_LOCAL.lua`.
 
 ### Bookmarks file path command-line parameter
 
@@ -81,7 +81,7 @@ On Windows you can install these dependencies with <a href="https://scoop.sh" ta
 ```
 scoop install busybox lua fzf
 ```
-You can also put manually downloaded binaries in `dep-bin-win/{dependency-name}` directories. See links below.
+You can also put manually downloaded binaries in `dependencies-win/{dependency-name}` directories. See links below.
 
 #### Links to Windows binaries
 - <a href="https://sourceforge.net/projects/luabinaries/files/5.4.0/Tools%20Executables/">`lua`</a>
