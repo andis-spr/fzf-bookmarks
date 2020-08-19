@@ -1,18 +1,16 @@
-# fzf-bookmarks
+`fzf-bookmarks` — platform & browser independent, portable, small, fast, delightful and wonderful solution for organizing web bookmarks.
 
-Platform & browser independent, portable, small, fast, delightful solution for organizing web bookmarks.
-
-## Features
+# Features
 
 - Type and select multiple bookmarks for opening them the web browser.
 - It's plaintext! Manage bookmarks via your favorite text editor & version control.
 - Runs the same in Unix-like system & Windows command-line interfaces.
 
-## Incentive
+# Incentive
 
 I'm not too fond of everchanging, opinionated browser UIs and wanted something portable and simple.
 
-## The bookmarks
+# The bookmarks
 
 `bookmarks.txt` with one bookmark per line, like this:
 ```
@@ -22,22 +20,22 @@ I'm not too fond of everchanging, opinionated browser UIs and wanted something p
 ...
 ```
 
-## How do I run this?
+# How do I run this?
 
 1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally and make sure your system has the <a href="#requirements">required packages</a> installed.
 2. Create your own 'bookmarks.txt' file.
 
-### Windows
+## Windows
 
 3. Run the `fzfb.bat` file.
 
-### Unix-like systems (macOS, Linux etc.)
+## Unix-like systems (macOS, Linux etc.)
 
 3. Set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
 
-## Some usage tips
+# Some usage tips
 
-### "Copy-a-bookmark" bookmarklet
+## "Copy-a-bookmark" bookmarklet
 
 Copy and paste a ready-made bookmark string to your `bookmarks.txt` file via browser <a href="https://en.wikipedia.org/wiki/Bookmarklet">bookmarklet</a>:
 
@@ -45,7 +43,7 @@ Copy and paste a ready-made bookmark string to your `bookmarks.txt` file via bro
 javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20metaKeywords%20%3D%20document.querySelector(%60meta%5Bname%3D%22keywords%22%5D%60)%3Bconst%20title%20%3D%20document.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%20bookmark%60%2C%60%24%7Bprepend%7D%24%7Btitle.length%20%3E%200%20%3F%20title%20%3A%20window.location.hostname%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%3F%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%20%3A%20'-'%7D%24%7BcolDelimeter%7D%24%7BmetaKeywords%20%3F%20metaKeywords.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%20%3A%20'-'%7D%60)%3B%7D)()%7D)()
 ```
 
-### Bookmarks file path launch parameter
+## Bookmarks file path launch parameter
 
 The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
@@ -53,25 +51,25 @@ The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
 Useful for having multiple bookmarks collection files, combined with custom aliases and launchers.
 
-### Creating a Windows taskbar shortcut
+## Creating a Windows taskbar shortcut
 
 To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\fzfb.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
 
 Wrap `fzfb.bat` in another `.bat` if you want more than one pinned shortcut icon.
 
-## Requirements
+# Requirements
 
 - <a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>
 - `printf`, `sed`, `awk`, `cat` are usually included with Unix-like systems like macOS and Linux. For Windows see below.
 
-### Windows
+## Windows
 
 On Windows you can install these dependencies with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
 
 ```
 scoop install busybox lua fzf
 ```
-#### Manually adding Windows dependencies
+### Manually adding Windows dependencies
 
 If you want a truly portable Windows package, you can get the dependencies from here:
 
