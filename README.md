@@ -18,7 +18,7 @@ One bookmark per line in `bookmarks.txt`, e.g.
 ...
 ```
 
-## How do I run this?
+## Running fzf-bookmarks
 
 1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally and make sure your system has the <a href="#requirements">required packages</a> installed.
 2. Create your own 'bookmarks.txt' file.
@@ -76,3 +76,7 @@ If you want a truly portable Windows package, you can get the dependencies from 
 - `printf`, `sed`, `awk`, `cat` can be found either in <a href="https://frippery.org/busybox/">`busybox`</a> or in GNU <a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">`coreutils`</a> + <a href="http://gnuwin32.sourceforge.net/packages/gawk.htm">`gawk`</a> packages.
 
 Then you can put them in right `dependencies-win/{dependency-name}` directories.
+
+# License
+
+MIT
