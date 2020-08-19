@@ -53,8 +53,6 @@ The `start` scripts accept an optional bookmarks file path parameter, e.g.
 - <a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>
 - `printf`, `sed`, `awk`, `cat` are usually included with Unix-like systems like macOS and Linux. For Windows see below.
 
-### Windows
-
 On Windows you can install these dependencies with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
 
 ```
