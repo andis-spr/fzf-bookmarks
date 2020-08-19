@@ -58,7 +58,6 @@ On Windows you can install these dependencies with <a href="https://scoop.sh" ta
 ```
 scoop install busybox lua fzf
 ```
-#### Manually adding Windows dependencies
 
 If you want a truly portable Windows package, you can get the dependencies from here:
 
