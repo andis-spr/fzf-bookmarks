@@ -51,9 +51,9 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 ### Configuration
 
-`ENV_LOCAL.lua` is the intended place for personal settings overrides. Refer to `ENV.lua` for the default values you can change.
+`SETTINGS_LOCAL.lua` is the intended place for personal settings overrides. Refer to `SETTINGS.lua` for the default values you can change.
 
-If you want to update `fzf-bookmarks` via `git`, you can exlude your `ENV_LOCAL.lua` configuration file changes from being tracked by running `git update-index --skip-worktree ENV_LOCAL.lua`.
+If you want to update `fzf-bookmarks` via `git`, you can exlude your `SETTINGS_LOCAL.lua` configuration file changes from being tracked by running `git update-index --skip-worktree SETTINGS_LOCAL.lua`.
 
 ### Bookmarks file path command-line parameter
 
