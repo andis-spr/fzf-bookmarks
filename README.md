@@ -16,7 +16,7 @@ So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bo
 
 ## The bookmarks
 
-`bookmarks.mx.txt` with one bookmark per line, like this:
+`bookmarks.fzb.txt` with one bookmark per line, like this:
 ```
 #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
 #  DigitalOcean  ~  https://cloud.digitalocean.com/login  ~  Helping millions of developers easily build, test, manage, and scale applications of any size – faster than ever before.  ~  
@@ -28,22 +28,21 @@ So, on the shoulders of `fzf`, `lua` and `some *nix text utilities`, the `fzf-bo
 
 1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally.
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
-3. Rename `./bookmarks.example.mx.txt` to `bookmarks.mx.txt` or create your own.
+3. Set your `BROWSER_CMD` and point to your own `BOOKMARKS_FILE` in `SETTINGS_LOCAL.lua`.
 
 ### Windows
 
-3. Run the `fzfb.bat` file.
+4. Run the `fzfb.bat` file.
 
 ### Unix-like systems (macOS, Linux etc.)
 
-3. Set `fzfb` as an executable by running `chmod +x ./fzfb`.
-4. Run the `fzfb` file.
+4. Set `fzfb` as an executable by running `chmod +x ./fzfb` then run `./fzfb`.
 
 ## Some usage tips
 
 ### "Copy-a-bookmark" bookmarklet
 
-Copy and paste a ready-made bookmark string to your `bookmarks.mx.txt` file via browser <a href="https://en.wikipedia.org/wiki/Bookmarklet">bookmarklet</a>:
+Copy and paste a ready-made bookmark string to your `bookmarks.fzb.txt` file via browser <a href="https://en.wikipedia.org/wiki/Bookmarklet">bookmarklet</a>:
 
 ```
 javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20metaKeywords%20%3D%20document.querySelector(%60meta%5Bname%3D%22keywords%22%5D%60)%3Bconst%20title%20%3D%20document.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%20bookmark%60%2C%60%24%7Bprepend%7D%24%7Btitle.length%20%3E%200%20%3F%20title%20%3A%20window.location.hostname%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%3F%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%20%3A%20'-'%7D%24%7BcolDelimeter%7D%24%7BmetaKeywords%20%3F%20metaKeywords.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%20%3A%20'-'%7D%60)%3B%7D)()%7D)()
@@ -53,7 +52,7 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
-`fzfb ~/myfiles/bookmarks.mx.txt` / `fzfb.bat "C:/myfiles/bookmarks.mx.txt"`.
+`fzfb ~/myfiles/bookmarks.fzb.txt` / `fzfb.bat "C:/myfiles/bookmarks.fzb.txt"`.
 
 Useful for having multiple bookmarks collection files, combined with custom aliases and launchers.
 
