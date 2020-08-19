@@ -26,7 +26,7 @@ One bookmark per line in your `bookmarks.mx.txt`, like this:
 
 ## How can I run this?
 
-1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository (`git clone git@github.com:andis-spr/fzf-bookmarks.git`).
+1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally.
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
 3. Rename `./bookmarks.example.mx.txt` to `bookmarks.mx.txt` or create your own.
 
