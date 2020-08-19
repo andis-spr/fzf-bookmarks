@@ -77,6 +77,6 @@ If you want a truly portable Windows package, you can get the dependencies from 
 
 Then you can put them in right `dependencies-win/{dependency-name}` directories.
 
-# License
+## License
 
 MIT
