@@ -51,9 +51,9 @@ The `start` scripts accept an optional bookmarks file path parameter, e.g.
 ## Requirements
 
 - <a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>
-- `printf`, `sed`, `awk`, `cat` are usually included with Unix-like systems like macOS and Linux. For Windows see below.
+- `printf`, `sed`, `awk`, `cat` are usually included with Unix-like systems like macOS and Linux.
 
-On Windows you can install these dependencies with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
+On Windows you can install all these dependencies with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
 
 ```
 scoop install busybox lua fzf
