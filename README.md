@@ -14,14 +14,13 @@ I'm not too fond of everchanging, opinionated browser UIs and wanted something p
 
 ## Bookmarks
 
-One bookmark per line, e.g.
+One bookmark per line in `bookmarks.txt`, e.g.
 ```
 #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
 #  DigitalOcean  ~  https://cloud.digitalocean.com/login  ~  Helping millions of developers easily build, test, manage, and scale applications of any size – faster than ever before.  ~  
 #  PHP: The Right Way  ~  https://phptherightway.com/  ~  An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web  ~  php, web, development, help, guide
 ...
 ```
-in `bookmarks.txt`.
 
 ## How do I run this?
 
