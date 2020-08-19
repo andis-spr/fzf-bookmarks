@@ -22,7 +22,6 @@ else
 end
 
 -- BOOKMARKS_FILE - Path to your bookmarks file.
-require('lua/file-exists');
 if (file_exists('bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
 then
     BOOKMARKS_FILE="./bookmarks.txt"

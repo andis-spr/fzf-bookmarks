@@ -1,3 +1,25 @@
+function file_exists(name)
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
+end
+
+function magiclines(str)
+    local pos = 1;
+    return function()
+        if not pos then return nil end
+        local  p1, p2 = string.find( str, "\r?\n", pos )
+        local line
+        if p1 then
+            line = str:sub( pos, p1 - 1 )
+            pos = p2 + 1
+        else
+            line = str:sub( pos )
+            pos = nil
+        end
+        return line
+    end
+end   
+
 do
     require('SETTINGS')
     require('SETTINGS_LOCAL')
@@ -20,22 +42,6 @@ do
         BOOKMARKS_FILE = arg[1]
     end
    
-    local function magiclines(str)
-        local pos = 1;
-        return function()
-            if not pos then return nil end
-            local  p1, p2 = string.find( str, "\r?\n", pos )
-            local line
-            if p1 then
-                line = str:sub( pos, p1 - 1 )
-                pos = p2 + 1
-            else
-                line = str:sub( pos )
-                pos = nil
-            end
-            return line
-        end
-    end   
     
     local function getURLFromBookmark(bookmark)
         local handle = io.popen(string.format(CMD_EXTRACT_URL, bookmark))
