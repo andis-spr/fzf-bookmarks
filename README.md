@@ -31,7 +31,7 @@ One bookmark per line in `bookmarks.txt`, e.g.
 
 3. Set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
 
-## Some usage tips
+## Tips and tricks
 
 ### "Copy-a-bookmark" bookmarklet
 
