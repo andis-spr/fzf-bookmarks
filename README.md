@@ -8,7 +8,7 @@ Portable, small, fast, delightful solution for organizing web bookmarks.
 - All plaintext! Manage bookmarks via your favorite text editor and version control.
 - Runs the same in Unix-like system & Windows command-line interfaces.
 
-## Bookmarks
+## `bookmarks.txt`
 
 ```
 #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
