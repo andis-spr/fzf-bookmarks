@@ -6,7 +6,7 @@ Portable, small, fast, delightful solution for organizing web bookmarks.
 
 - Type and select multiple bookmarks for opening them the web browser.
 - Manage bookmarks via your favorite text editor and version control.
-- Runs the same on Unix-like systems & Windows command-line interfaces.
+- Runs the same in Unix-like system & Windows command-line interfaces.
 
 ## `bookmarks.txt`
 
@@ -46,7 +46,7 @@ The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
 ## Requirements
 
-<a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>, `printf`, `sed`, `awk`, `cat` are required for `fzf-bookmarks` to run.
+<a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>, `printf`, `sed`, `awk`, `cat` are required.
 
 ---
 
