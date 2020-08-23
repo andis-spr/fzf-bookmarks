@@ -27,7 +27,7 @@ Platform & browser independent, portable, small, fast, delightful solution for o
 
 Once familiar with the interface, create your own `bookmarks.txt` (check out `example.bookmarks.txt` for example).
 
-## Tips and tricks
+## Tips & tricks
 
 ### Bookmarklet
 
