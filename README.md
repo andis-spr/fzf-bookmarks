@@ -20,11 +20,8 @@ Portable, small, fast, delightful solution for organizing web bookmarks.
 ## Running
 
 1. Download and extract <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally.
-
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
-
 3. Create your own `bookmarks.txt` (check out `example.bookmarks.txt`).
-
 4. On **Windows** — just launch `fzfb.bat`.<br />On **Unix-like systems** — run `chmod +x ./fzfb` (1st time only), then `./fzfb`.
 
 ## Tips & tricks
