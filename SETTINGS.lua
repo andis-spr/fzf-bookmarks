@@ -15,9 +15,9 @@ then
 else
     -- Assume a Microsoft Windows system --
     BROWSER_CMD = {
+        "start chrome %s",
         "start %s", -- Point to Windows default http/s URL handler
         "start edge %s",
-        "start chrome %s",
         "start firefox -new-tab %s",
     }
 end
