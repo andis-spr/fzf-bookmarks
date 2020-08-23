@@ -7,18 +7,18 @@ if package.config:sub(1,1) == '/' -- (Determine system by checking the path sepa
 then
     -- Assume a Unix-like system e.g. GNU/Linux, macOS --
     BROWSER_CMD = {
+        "sensible-browser %s", -- Debian/*buntu GNU/Linux symlink to an installed default browser
+        "safari %s",
         "chrome %s",
         "firefox -new-tab %s",
-        "sensible-browser %s", -- Debian/*buntu GNU/Linux symlink to an installed default browser
-        "safari %s"
     }
 else
     -- Assume a Microsoft Windows system --
     BROWSER_CMD = {
+        "start %s", -- Point to Windows default http/s URL handler
+        "start edge %s",
         "start chrome %s",
         "start firefox -new-tab %s",
-        "start edge %s",
-        "start %s", -- Point to Windows default http/s URL handler
     }
 end
 
