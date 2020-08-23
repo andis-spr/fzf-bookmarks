@@ -5,8 +5,8 @@ Portable, small, fast, delightful solution for organizing web bookmarks.
 ## Features
 
 - Type and select multiple bookmarks for opening them the web browser.
-- All plaintext! Manage bookmarks via your favorite text editor and version control.
-- Runs the same in Unix-like system & Windows command-line interfaces.
+- Manage bookmarks via your favorite text editor and version control.
+- Runs the same on Unix-like systems & Windows command-line interfaces.
 
 ## `bookmarks.txt`
 
