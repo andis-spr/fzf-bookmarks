@@ -5,12 +5,11 @@ Platform & browser independent, portable, small, fast, delightful solution for o
 ## Features
 
 - Type and select multiple bookmarks for opening them the web browser.
-- It's all plaintext! Manage bookmarks via your favorite text editor & version control.
+- All plaintext! Manage bookmarks via your favorite text editor and version control.
 - Runs the same in Unix-like system & Windows command-line interfaces.
 
 ## Bookmarks
 
-One bookmark per line in `bookmarks.txt`, e.g.
 ```
 #  50 Watts  ~  http://50watts.com/  ~  Illustration and book art with a literary bent. Focus on international illustrated books and Surrealism.  ~  visual arts, inspiration, illustration, archive
 #  DigitalOcean  ~  https://cloud.digitalocean.com/login  ~  Helping millions of developers easily build, test, manage, and scale applications of any size – faster than ever before.  ~  
@@ -20,17 +19,19 @@ One bookmark per line in `bookmarks.txt`, e.g.
 
 ## Running
 
-1. Download and extract the <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally and make sure your system has the <a href="#requirements">required packages</a> installed.
+1. Download and extract <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">zip archive</a> or clone the repository locally.
 
-2. **On Windows** — just run the `fzfb.bat` file. **On Unix-like systems** — set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
+2. Make sure your system has the <a href="#requirements">required packages</a> installed.
 
-Once your familiar with the interface, create your own `bookmarks.txt` (check out `example.bookmarks.txt` for example).
+2. **On Windows** — just launch `fzfb.bat`. **On Unix-like systems** — set `fzfb` as an executable by running `chmod +x ./fzfb`, then run `./fzfb`.
+
+Once familiar with the interface, create your own `bookmarks.txt` (check out `example.bookmarks.txt` for example).
 
 ## Tips and tricks
 
 ### Bookmarklet
 
-Copy and paste a ready-made bookmark string to your `bookmarks.txt` file via this browser <a href="https://en.wikipedia.org/wiki/Bookmarklet">bookmarklet</a>:
+Get web page info as `bookmarks.txt` line via this handy <a href="https://en.wikipedia.org/wiki/Bookmarklet">bookmarklet</a>:
 
 ```
 javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20document.querySelector(%60meta%5Bname%3D%22description%22%5D%60)%3Bconst%20metaKeywords%20%3D%20document.querySelector(%60meta%5Bname%3D%22keywords%22%5D%60)%3Bconst%20title%20%3D%20document.title.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%3Bconst%20prepend%20%3D%20%60%23%20%20%60%3Bconst%20colDelimeter%20%3D%20%60%20%20~%20%20%60%3Bprompt(%60Copy%20this%20bookmark%60%2C%60%24%7Bprepend%7D%24%7Btitle.length%20%3E%200%20%3F%20title%20%3A%20window.location.hostname%7D%24%7BcolDelimeter%7D%24%7Bwindow.location%7D%24%7BcolDelimeter%7D%24%7BmetaDescription%20%3F%20metaDescription.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%20%3A%20'-'%7D%24%7BcolDelimeter%7D%24%7BmetaKeywords%20%3F%20metaKeywords.content.replace(%2F%5Cs%2B%2Fg%2C%20%60%20%60).trim()%20%3A%20'-'%7D%60)%3B%7D)()%7D)()
