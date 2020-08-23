@@ -58,12 +58,12 @@ scoop install busybox lua fzf
 
 ---
 
-If you want a truly portable Windows package, you can get the dependencies from here:
+For a truly portable Windows package, get the dependencies from here:
 
 - <a href="https://sourceforge.net/projects/luabinaries/files/5.4.0/Tools%20Executables/">`lua`</a>, <a href="https://github.com/junegunn/fzf-bin/releases">`fzf`</a>
 - `printf`, `sed`, `awk`, `cat` can be extracted either from <a href="https://frippery.org/busybox/">`busybox`</a> or GNU <a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">`coreutils`</a> + <a href="http://gnuwin32.sourceforge.net/packages/gawk.htm">`gawk`</a> packages.
 
-And put them in the right `dependencies-win/*` directories.
+Put them in the right `dependencies-win/*` directories.
 
 ## License
 
