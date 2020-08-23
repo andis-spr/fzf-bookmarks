@@ -28,7 +28,7 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 1. Extract <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">the archive</a> or clone the repository locally.
 2. Make sure your system has the <a href="#requirements">requirements</a> installed.
 3. Create your own `bookmarks.txt` (check out `example.bookmarks.txt`).
-4. On **Windows** — launch `fzfb.bat`.<br />On **Unix-like systems** — run `chmod +x ./fzfb` (1st-time only), then `./fzfb`.
+4. **Windows** — launch `fzfb.bat`.<br />**Unix-like systems** — run `chmod +x ./fzfb` (1st-time only), then `./fzfb`.
 
 ## Tips & tricks
 
