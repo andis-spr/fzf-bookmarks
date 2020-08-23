@@ -1,6 +1,6 @@
 # fzf-bookmarks
 
-Platform & browser independent, portable, small, fast, delightful solution for organizing web bookmarks.
+Portable, small, fast, delightful solution for organizing web bookmarks.
 
 ## Features
 
