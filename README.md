@@ -23,7 +23,7 @@ Portable, small, fast, delightful solution for organizing web bookmarks.
 
 2. Make sure your system has the <a href="#requirements">required packages</a> installed.
 
-2. **On Windows** — just launch `fzfb.bat`.<br />**On Unix-like systems** — run `chmod +x ./fzfb` (1st time only), then `./fzfb`.
+2. On **Windows** — just launch `fzfb.bat`.<br />On **Unix-like systems** — run `chmod +x ./fzfb` (1st time only), then `./fzfb`.
 
 Once familiar with the interface, create your own `bookmarks.txt` (check out `example.bookmarks.txt` for example).
 
