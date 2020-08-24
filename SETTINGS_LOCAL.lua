@@ -1,5 +1,13 @@
 -- Put your personal settings here, e.g.
--- BOOKMARKS_FILE="./example-bookmarks.fzb.txt"
--- BROWSER_CMD="start firefox -new-tab %s"
+--
+-- BOOKMARKS_FILE="C:/bookmarks.txt"
+--
+-- CLIPBOARD_CMD="clip"
+--
+-- BROWSER_CMD = {
+--     "start firefox -new-tab %s",
+--     "start chrome %s",
+--     "start %s",
+--     "start edge %s"
+-- }
 -- ...
--- Refer to SETTINGS_DEFAULT.lua for the default values.
