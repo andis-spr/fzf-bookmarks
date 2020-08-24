@@ -1,6 +1,7 @@
 Soon:
 - Usage preview GIF in README.
 - Look into support for opening URLs from Android Termux environment.
+- Handle Windows relative paths
 
 Later:
 - Vim/Neovim syntax highlighting
