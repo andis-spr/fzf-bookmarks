@@ -29,26 +29,35 @@ function is_int(n)
 end
 
 do
-    require('SETTINGS')
-    require('SETTINGS_LOCAL')
 
     if package.config:sub(1,1) == '/'
     then
         -- Assume a Unix-like system e.g. GNU/Linux --
-        CMD_EXTRACT_URL="./cmd-nix/extract-url.sh \"%s\""
-        CMD_OPEN_URL_IN_BROWSER="./cmd-nix/open-url-in-browser.sh %s"
-        CMD_GET_BOOKMARK_LINE="./cmd-nix/get-bookmark-line.sh %s %s %s %s"
+        require(arg[1]..'/SETTINGS')
+        require(arg[1]..'/SETTINGS_LOCAL')
+
+        CMD_EXTRACT_URL=arg[1].."/cmd-nix/extract-url.sh \"%s\""
+        CMD_OPEN_URL_IN_BROWSER=arg[1].."/cmd-nix/open-url-in-browser.sh %s"
+        CMD_GET_BOOKMARK_LINE=arg[1].."/cmd-nix/get-bookmark-line.sh %s %s %s %s"
+
+        if (arg[2] ~= nil)
+        then
+            BOOKMARKS_FILE = arg[2]
+        end
     else
         -- Assume a Microsoft Windows system --
+        require('SETTINGS')
+        require('SETTINGS_LOCAL')
         CMD_EXTRACT_URL=".\\cmd-win\\extract-url \"%s\""
         CMD_OPEN_URL_IN_BROWSER=".\\cmd-win\\open-url-in-browser %s"
         CMD_GET_BOOKMARK_LINE=".\\cmd-win\\get-bookmark-line %s %s %s %s"
+
+        if (arg[1] ~= nil)
+        then
+            BOOKMARKS_FILE = arg[1]
+        end
     end
 
-    if (arg[1] ~= nil)
-    then
-        BOOKMARKS_FILE = arg[1]
-    end
    
     local function getBookmarkLines()
         local handle = io.popen(string.format(CMD_GET_BOOKMARK_LINE, BOOKMARKS_FILE, FZF_LAYOUT, FZF_PREVIEW_WINDOW, FZF_PREVIEW))

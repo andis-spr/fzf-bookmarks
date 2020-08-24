@@ -12,6 +12,15 @@ then
         "chrome %s",
         "firefox -new-tab %s",
     }
+
+    -- BOOKMARKS_FILE - Path to your bookmarks file.
+    if (file_exists('bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
+    then
+        BOOKMARKS_FILE=arg[1].."/bookmarks.txt"
+    else
+        BOOKMARKS_FILE=arg[1].."/example.bookmarks.txt"
+    end
+    -- You can also pass this path as a parameter to fzfb[.bat].
 else
     -- Assume a Microsoft Windows system --
     BROWSER_CMD = {
@@ -20,17 +29,16 @@ else
         "start edge %s",
         "start firefox -new-tab %s",
     }
-end
 
--- BOOKMARKS_FILE - Path to your bookmarks file.
-if (file_exists('bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
-then
-    BOOKMARKS_FILE="./bookmarks.txt"
-else
-    BOOKMARKS_FILE="./example.bookmarks.txt"
+    -- BOOKMARKS_FILE - Path to your bookmarks file.
+    if (file_exists('bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
+    then
+        BOOKMARKS_FILE="bookmarks.txt"
+    else
+        BOOKMARKS_FILE="example.bookmarks.txt"
+    end
+    -- You can also pass this path as a parameter to fzfb[.bat].
 end
--- You can also pass this path as a parameter to fzfb[.bat].
-
 
 -- BROWSER_CMD_IS_SEQ - determines what pressing Enter on selected bookmarks does:
 -- true - repeats BROWSER_CMD call for each link individually;

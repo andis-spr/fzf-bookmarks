@@ -10,7 +10,7 @@ then
                 --cycle \
                 --layout="$2" \
                 --preview-window="$3" \
-                --preview="./cmd-nix/preview-fzf.sh {}" )"
+                --preview="$(dirname "$0")/preview-fzf.sh {}" )"
 else
     var="$( cat $1 | \
             sed -n "/^\#\s\s/p" | \

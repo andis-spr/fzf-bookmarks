@@ -3,8 +3,8 @@ chmod +x $(dirname "$0")/cmd-nix/*.sh
 echo -en "\033]0;websites on the internet\a"
 if [ $# -eq 0 ]
     then
-        lua main.lua
+        lua $(dirname "$0")/main.lua $(dirname "$0")
     else 
-        lua main.lua $1
+        lua $(dirname "$0")/main.lua $(dirname "$0") $1
 fi
 
