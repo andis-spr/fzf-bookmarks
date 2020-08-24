@@ -36,6 +36,8 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaDescription%20%3D%20docum
 
 ## Tips & tricks
 
+- You can select multiple bookmarks with `Tab` key.
+
 ### Windows taskbar shortcut
 
 To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\fzfb.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
