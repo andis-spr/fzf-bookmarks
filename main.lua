@@ -45,17 +45,19 @@ then
     end
 else
     -- Assume a Microsoft Windows system --
+    package.path=package.path..";"..arg[1].."SETTINGS.lua"
+    package.path=package.path..";"..arg[1].."SETTINGS_LOCAL.lua"
 
     require('SETTINGS')
     require('SETTINGS_LOCAL')
 
-    CMD_EXTRACT_URL=".\\cmd-win\\extract-url \"%s\""
-    CMD_OPEN_URL_IN_BROWSER=".\\cmd-win\\open-url-in-browser %s"
-    CMD_GET_BOOKMARK_LINE=".\\cmd-win\\get-bookmark-line %s %s %s %s"
+    CMD_EXTRACT_URL=arg[1].."\\cmd-win\\extract-url \"%s\""
+    CMD_OPEN_URL_IN_BROWSER=arg[1].."\\cmd-win\\open-url-in-browser %s"
+    CMD_GET_BOOKMARK_LINE=arg[1].."\\cmd-win\\get-bookmark-line %s %s %s %s"
 
-    if (arg[1] ~= nil)
+    if (arg[2] ~= nil)
     then
-        BOOKMARKS_FILE = arg[1]
+        BOOKMARKS_FILE = arg[2]
     end
 end
 

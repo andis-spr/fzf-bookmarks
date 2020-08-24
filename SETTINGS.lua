@@ -22,6 +22,16 @@ then
         BOOKMARKS_FILE=arg[1].."/example.bookmarks.txt"
     end
     -- You can also pass this path as a parameter to fzfb[.bat].
+    
+    -- CLIPBOARD_CMD - system clipboard utility
+    -- Typically on
+    --- Microsoft Windows:
+    --- CLIPBOARD_CMD="clip"
+    --- Linux/Unix with X11:
+    --- CLIPBOARD_CMD="xclip -selection c"
+    --- macOS
+    --- CLIPBOARD_CMD="pbcopy"
+    CLIPBOARD_CMD="xclip -selection c"
 else
     -- Assume a Microsoft Windows system --
 
@@ -34,24 +44,24 @@ else
     }
 
     -- BOOKMARKS_FILE - Path to your bookmarks file.
-    if (fileExists('bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
+    if (fileExists(arg[1]..'bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
     then
-        BOOKMARKS_FILE="bookmarks.txt"
+        BOOKMARKS_FILE=arg[1].."bookmarks.txt"
     else
-        BOOKMARKS_FILE="example.bookmarks.txt"
+        BOOKMARKS_FILE=arg[1].."example.bookmarks.txt"
     end
     -- You can also pass this path as a parameter to fzfb[.bat].
+    
+    -- CLIPBOARD_CMD - system clipboard utility
+    -- Typically on
+    --- Microsoft Windows:
+    --- CLIPBOARD_CMD="clip"
+    --- Linux/Unix with X11:
+    --- CLIPBOARD_CMD="xclip -selection c"
+    --- macOS
+    --- CLIPBOARD_CMD="pbcopy"
+    CLIPBOARD_CMD="clip"
 end
-
--- CLIPBOARD_CMD - system clipboard utility
--- Typically on
---- Microsoft Windows:
---- CLIPBOARD_CMD="clip"
---- Linux/Unix with X11:
---- CLIPBOARD_CMD="xclip -selection c"
---- macOS
---- CLIPBOARD_CMD="pbcopy"
-CLIPBOARD_CMD="xclip -selection c"
 
 -- BROWSER_CMD_IS_SEQ - determines what pressing Enter on selected bookmarks does:
 -- true - repeats BROWSER_CMD call for each link individually;
