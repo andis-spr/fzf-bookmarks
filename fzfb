@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
-chmod +x ./cmd-nix/*.sh
+chmod +x $(dirname "$0")/cmd-nix/*.sh
+echo -en "\033]0;websites on the internet\a"
 if [ $# -eq 0 ]
     then
         lua main.lua
