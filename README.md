@@ -2,15 +2,13 @@
 
 Portable, small, fast, delightful solution for organizing web bookmarks.
 
+![Demonstration: Finding and selecting 3 bookmarks for open in the default web browser.](preview.gif?raw=true "Demonstration: Finding and selecting 3 bookmarks for open in the default web browser.")
+
 ## Features
 
 - Type and select multiple bookmarks for opening them the web browser.
 - Manage bookmarks via your favorite text editor and version control.
 - Runs the same in Unix-like system & Windows command-line interfaces.
-
-## Preview
-
-![Demonstration: Finding and selecting 3 bookmarks for open in the default web browser.](preview.gif?raw=true "Demonstration: Finding and selecting 3 bookmarks for open in the default web browser.")
 
 ## `bookmarks.txt`
 
