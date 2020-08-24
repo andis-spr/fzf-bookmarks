@@ -2,8 +2,6 @@
 
 Portable, small, fast, delightful solution for organizing web bookmarks.
 
----
-
 ![Demonstration: Finding and selecting 3 bookmarks for opening in the default web browser.](preview.gif?raw=true "Demonstration: Finding and selecting 3 bookmarks for opening in the default web browser.")
 
 ## Features
