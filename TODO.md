@@ -1,6 +1,3 @@
-Soon:
-- Look into support for opening URLs from Android Termux environment.
-
 Later:
 - Vim/Neovim syntax highlighting
 - freedesktop.org desktop entry

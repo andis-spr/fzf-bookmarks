@@ -8,13 +8,13 @@ Portable, small, fast, delightful solution for organizing web bookmarks.
 
 - Type and select multiple bookmarks for opening them the web browser.
 - Manage bookmarks via your favorite text editor and version control.
-- Runs from Windows and Unix-like system command-lines.
+- Runs from Windows and Unix-like system (incl. <a href="https://termux.com/">Termux</a> on Android) command-lines.
 
 ## Running
 
 1. Extract <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">the archive</a> or clone the repository locally.
 2. Make sure your system has the <a href="#requirements">requirements</a> installed.
-2. Customize your `PLATFORM`, prefered `BROWSER_CMD` and other settings in `SETTINGS_LOCAL.lua`.
+2. Customize your `PLATFORM`, prefered `BROWSER_CMD` order and other settings in `SETTINGS_LOCAL.lua`.
 3. Create your own `bookmarks.txt` (check out `example.bookmarks.txt`).
 4. **Windows** — run `fzfb.bat`.<br />**Unix-like systems** — run `./fzfb`.
 
