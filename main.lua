@@ -28,10 +28,10 @@ function isInt(n)
   return (type(n) == "number") and (math.floor(n) == n)
 end
 
-package.path=package.path..";"..arg[1].."/SETTINGS.lua"
-package.path=package.path..";"..arg[1].."/SETTINGS_LOCAL.lua"
-require('SETTINGS')
-require('SETTINGS_LOCAL')
+dofile(arg[1]..'/SETTINGS_LOCAL.lua')
+dofile(arg[1]..'/SETTINGS.lua')
+
+io.write(BROWSER_CMD[1])
 
 if PLATFORM == 0 or PLATFORM == 1 or PLATFORM == 2
 then

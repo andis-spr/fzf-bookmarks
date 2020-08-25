@@ -2,7 +2,7 @@
 -- 
 -- PLATFORM = 3
 --
--- BOOKMARKS_FILE="C:/bookmarks.txt"
+-- BOOKMARKS_FILE="D:/bookmarks/bookmarks.txt"
 --
 -- BROWSER_CMD = {
 --     "start firefox -new-tab %s",
