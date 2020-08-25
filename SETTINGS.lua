@@ -129,7 +129,7 @@ then
 
     if PLATFORM == 3
     then
-        -- termux-clipboard-set accepts single URL argument, so let's repeat it for each URL
+        -- termux-open-url accepts single URL argument, so let's repeat it for each URL
         BROWSER_CMD_IS_SEQ=true
     end
 
