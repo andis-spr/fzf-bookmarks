@@ -28,13 +28,13 @@ function isInt(n)
   return (type(n) == "number") and (math.floor(n) == n)
 end
 
-if package.config:sub(1,1) == '/'
+package.path=package.path..";"..arg[1].."/SETTINGS.lua"
+package.path=package.path..";"..arg[1].."/SETTINGS_LOCAL.lua"
+require('SETTINGS')
+require('SETTINGS_LOCAL')
+
+if PLATFORM == 0 or PLATFORM == 1 or PLATFORM == 2
 then
-    -- Assume a Unix-like system e.g. GNU/Linux --
-
-    require(arg[1]..'/SETTINGS')
-    require(arg[1]..'/SETTINGS_LOCAL')
-
     CMD_EXTRACT_URL=arg[1].."/cmd-nix/extract-url.sh \"%s\""
     CMD_OPEN_URL_IN_BROWSER=arg[1].."/cmd-nix/open-url-in-browser.sh %s"
     CMD_GET_BOOKMARK_LINE=arg[1].."/cmd-nix/get-bookmark-line.sh %s %s %s %s"
@@ -44,23 +44,18 @@ then
         BOOKMARKS_FILE = arg[2]
     end
 else
-    -- Assume a Microsoft Windows system --
-    package.path=package.path..";"..arg[1].."SETTINGS.lua"
-    package.path=package.path..";"..arg[1].."SETTINGS_LOCAL.lua"
-
-    require('SETTINGS')
-    require('SETTINGS_LOCAL')
-
-    CMD_EXTRACT_URL=arg[1].."\\cmd-win\\extract-url \"%s\""
-    CMD_OPEN_URL_IN_BROWSER=arg[1].."\\cmd-win\\open-url-in-browser %s"
-    CMD_GET_BOOKMARK_LINE=arg[1].."\\cmd-win\\get-bookmark-line %s %s %s %s"
-
-    if (arg[2] ~= nil)
+    if PLATFORM == 3
     then
-        BOOKMARKS_FILE = arg[2]
+        CMD_EXTRACT_URL=arg[1].."\\cmd-win\\extract-url \"%s\""
+        CMD_OPEN_URL_IN_BROWSER=arg[1].."\\cmd-win\\open-url-in-browser %s"
+        CMD_GET_BOOKMARK_LINE=arg[1].."\\cmd-win\\get-bookmark-line %s %s %s %s"
+
+        if (arg[2] ~= nil)
+        then
+            BOOKMARKS_FILE = arg[2]
+        end
     end
 end
-
 
 local function getBookmarkLines()
     local handle = io.popen(string.format(CMD_GET_BOOKMARK_LINE, BOOKMARKS_FILE, FZF_LAYOUT, FZF_PREVIEW_WINDOW, FZF_PREVIEW))

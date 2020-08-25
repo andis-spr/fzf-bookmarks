@@ -1,8 +1,8 @@
 -- Put your personal settings here, e.g.
+-- 
+-- PLATFORM = 3
 --
 -- BOOKMARKS_FILE="C:/bookmarks.txt"
---
--- CLIPBOARD_CMD="clip"
 --
 -- BROWSER_CMD = {
 --     "start firefox -new-tab %s",
