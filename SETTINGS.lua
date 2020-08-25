@@ -56,7 +56,7 @@ end
 -- You can also pass this path as a parameter to fzfb[.bat].
 if BOOKMARKS_FILE == nil
 then
-    if (PLATFORM == 0 or PLATFORM == 1 or PLATFORM == 2 or PLATFORM == 3) and BOOKMARKS_FILE == nil
+    if PLATFORM == 0 or PLATFORM == 1 or PLATFORM == 2 or PLATFORM == 3
     then
         if (fileExists('bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
         then
@@ -66,7 +66,7 @@ then
         end
     end
 
-    if PLATFORM == 4 and BOOKMARKS_FILE == nil
+    if PLATFORM == 4
     then
         if (fileExists(arg[1]..'bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
         then

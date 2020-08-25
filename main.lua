@@ -31,7 +31,7 @@ end
 dofile(arg[1]..'/SETTINGS_LOCAL.lua')
 dofile(arg[1]..'/SETTINGS.lua')
 
-if PLATFORM == 0 or PLATFORM == 1 or PLATFORM == 2
+if PLATFORM == 0 or PLATFORM == 1 or PLATFORM == 2 or PLATFORM == 3
 then
     CMD_EXTRACT_URL=arg[1].."/cmd-nix/extract-url.sh \"%s\""
     CMD_OPEN_URL_IN_BROWSER=arg[1].."/cmd-nix/open-url-in-browser.sh %s"
@@ -42,7 +42,7 @@ then
         BOOKMARKS_FILE = arg[2]
     end
 else
-    if PLATFORM == 3
+    if PLATFORM == 4
     then
         CMD_EXTRACT_URL=arg[1].."\\cmd-win\\extract-url \"%s\""
         CMD_OPEN_URL_IN_BROWSER=arg[1].."\\cmd-win\\open-url-in-browser %s"
