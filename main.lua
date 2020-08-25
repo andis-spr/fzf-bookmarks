@@ -31,8 +31,6 @@ end
 dofile(arg[1]..'/SETTINGS_LOCAL.lua')
 dofile(arg[1]..'/SETTINGS.lua')
 
-io.write(BROWSER_CMD[1])
-
 if PLATFORM == 0 or PLATFORM == 1 or PLATFORM == 2
 then
     CMD_EXTRACT_URL=arg[1].."/cmd-nix/extract-url.sh \"%s\""
