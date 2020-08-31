@@ -65,7 +65,7 @@ end
 
 
 local function getURLFromBookmark(bookmark)
-    local handle = io.popen(string.format(CMD_EXTRACT_URL, string.format("%s", bookmark)))
+    local handle = io.popen(string.format(CMD_EXTRACT_URL, bookmark))
     local result = handle:read("*a")
     handle:close()
     return result
