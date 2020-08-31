@@ -1,12 +1,13 @@
 -- Put your personal settings here, e.g.
 -- 
--- PLATFORM = 3
+-- PLATFORM = 4
 --
 -- BOOKMARKS_FILE="D:/bookmarks/bookmarks.txt"
 --
 -- BROWSER_CMD = {
 --     "start firefox -new-tab %s",
 --     "start chrome %s",
+--     "start chrome -incognito %s",
 --     "start %s",
 --     "start edge %s"
 -- }
