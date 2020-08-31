@@ -51,7 +51,7 @@ The `start` scripts accept an optional bookmarks file path parameter, e.g.
 
 ## Requirements
 
-<a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>, `printf`, `sed`, `awk`, `cat` are required.
+<a href="https://www.lua.org/">`lua`</a>, <a href="https://github.com/junegunn/fzf">`fzf`</a>, `printf`, `awk` are required.
 
 ---
 
@@ -66,7 +66,7 @@ scoop install busybox lua fzf
 For a truly portable Windows package, get the dependencies from here:
 
 - <a href="https://sourceforge.net/projects/luabinaries/files/5.4.0/Tools%20Executables/">`lua`</a>, <a href="https://github.com/junegunn/fzf-bin/releases">`fzf`</a>
-- `printf`, `sed`, `awk`, `cat` can be extracted either from <a href="https://frippery.org/busybox/">`busybox`</a> or GNU <a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">`coreutils`</a> + <a href="http://gnuwin32.sourceforge.net/packages/gawk.htm">`gawk`</a> packages.
+- `printf`, `awk` can be extracted either from <a href="https://frippery.org/busybox/">`busybox`</a> or GNU <a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">`coreutils`</a> + <a href="http://gnuwin32.sourceforge.net/packages/gawk.htm">`gawk`</a> packages.
 
 Put them in the right `dependencies-win/*` directories.
 

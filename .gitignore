@@ -2,13 +2,9 @@ BOOKMARKS.txt
 bookmarks.txt
 dependencies-win/awk/*
 !dependencies-win/awk/.gitkeep
-dependencies-win/sed/*
-!dependencies-win/sed/.gitkeep
 dependencies-win/fzf/*
 !dependencies-win/fzf/.gitkeep
 dependencies-win/lua/*
 !dependencies-win/lua/.gitkeep
-dependencies-win/cat/*
-!dependencies-win/cat/.gitkeep
 dependencies-win/printf/*
 !dependencies-win/printf/.gitkeep
