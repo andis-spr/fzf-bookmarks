@@ -6,5 +6,3 @@ dependencies-win/fzf/*
 !dependencies-win/fzf/.gitkeep
 dependencies-win/lua/*
 !dependencies-win/lua/.gitkeep
-dependencies-win/printf/*
-!dependencies-win/printf/.gitkeep

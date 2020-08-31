@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-url="$( printf "$1" | \
+url="$( echo "$1" | \
         awk -F "  ~  " '{print $2}' \
     )"
 
