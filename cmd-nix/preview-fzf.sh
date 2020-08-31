@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 
 printf "$@" | \
-    awk '{gsub("  ~  ","\n\n", $0); print}' | \
-    awk '{sub("#  ","", $0); print}'
+    awk '{with_nl=gsub("  ~  ","\n\n", $0); without_pre=sub("#  ","", with_nl); print $without_pre}'
