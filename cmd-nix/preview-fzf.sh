@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
 printf "$@" | \
-    sed "s/\s\s~\s\s/\n\n/g" | \
-    sed "s/\#\s\s//g"
+    awk '{gsub("  ~  ","\n\n", $0); print}' | \
+    awk '{sub("#  ","", $0); print}'
