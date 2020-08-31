@@ -58,7 +58,7 @@ The `start` scripts accept an optional bookmarks file path parameter, e.g.
 On Windows you can install all these dependencies with <a href="https://scoop.sh" target="_blank">`scoop`</a> by running
 
 ```
-scoop install busybox lua fzf
+scoop install gawk lua fzf
 ```
 
 ---
