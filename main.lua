@@ -3,10 +3,6 @@ function fileExists(name)
    if f~=nil then io.close(f) return true else return false end
 end
 
-function trim(s)
-   return (s:gsub("^%s*(.-)%s*$", "%1"))
-end
-
 function magicLines(str)
     local pos = 1;
     return function()
