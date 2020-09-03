@@ -1,10 +1,11 @@
 #!/usr/bin/env sh
 chmod +x $(dirname "$0")/cmd-nix/*.sh
-echo -en "\033]0;websites on the internet\a"
 if [ $# -eq 0 ]
     then
+        echo -en "\033]0;fzf-bookmarks\a"
         lua $(dirname "$0")/main.lua $(dirname "$0")
     else 
+        echo -en "\033]0;$1\a"
         lua $(dirname "$0")/main.lua $(dirname "$0") $1
 fi
 
