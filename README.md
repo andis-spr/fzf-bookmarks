@@ -22,7 +22,7 @@ Portable, small, fast, delightful solution for organizing web bookmarks.
 
 ```
 #  50 Watts  ~  http://50watts.com/  ~  visual arts, inspiration, illustration, archive
-#  DigitalOcean  ~  https://cloud.digitalocean.com/login  ~  
+#  DigitalOcean  ~  https://cloud.digitalocean.com/login
 #  PHP: The Right Way  ~  https://phptherightway.com/  ~  php, web, development, help, guide
 ...
 ```
