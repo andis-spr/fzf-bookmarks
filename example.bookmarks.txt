@@ -4,5 +4,5 @@
 #  50 Watts  ~  http://50watts.com/  ~  visual arts, inspiration, illustration, archive
 #  Best practices for using font-weights with web fonts  ~  https://www.webtype.com/info/articles/fonts-weights/  ~  guide, design, fonts, web
 #  Loripsum.net - The 'lorem ipsum' generator that doesn't suck.  ~  https://loripsum.net/  ~  lorem-ipsum, design, online-tool
-#  Mozilla Observatory  ~  https://observatory.mozilla.org/  ~  
+#  Mozilla Observatory  ~  https://observatory.mozilla.org/
 #  PHP: The Right Way  ~  https://phptherightway.com/  ~  php, web, development, help, guide
