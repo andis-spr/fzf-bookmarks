@@ -148,7 +148,7 @@ end
 
 if FZF_PREVIEW_WINDOW == nil
 then
-    FZF_PREVIEW_WINDOW="up:7"
+    FZF_PREVIEW_WINDOW="up:5"
 end
 
 if FZF_LAYOUT == nil
