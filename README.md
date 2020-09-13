@@ -33,7 +33,7 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaKeywords%20%3D%20document
 
 ## Tips & tricks
 
-- You can select multiple bookmarks with `Tab` key.
+- Select multiple bookmarks using the `Tab` key.
 
 ### Windows taskbar shortcut
 
@@ -66,7 +66,7 @@ For a truly portable Windows package, get the dependencies from here:
 - <a href="https://sourceforge.net/projects/luabinaries/files/5.4.0/Tools%20Executables/">`lua`</a>, <a href="https://github.com/junegunn/fzf-bin/releases">`fzf`</a>
 - `awk` can be extracted either from <a href="https://frippery.org/busybox/">`busybox`</a> or GNU <a href="http://gnuwin32.sourceforge.net/packages/gawk.htm">`gawk`</a> packages.
 
-Put them in the right `dependencies-win/*` directories.
+Put these dependencies in the right `dependencies-win/*` directories.
 
 ## License
 
