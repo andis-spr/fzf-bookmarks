@@ -1,12 +1,10 @@
 # fzf-bookmarks
 
-Portable, small, fast, delightful solution for organizing web bookmarks.
-
-![Demonstration: Finding and selecting 3 bookmarks for opening in the default web browser.](https://i.imgur.com/oxGnpff.gif "Demonstration: Finding and selecting 3 bookmarks for opening in the default web browser.")
+Use your web bookmarks from a searchable CLI-based menu.
 
 ## Features
 
-- Type and select multiple bookmarks for opening them the web browser.
+- Search and open one or multiple bookmarks in the web browser or copy them to clipboard.
 - Manage bookmarks via your favorite text editor and version control.
 - Runs from Windows and Unix-like system (incl. <a href="https://termux.com/">Termux</a> on Android) command-lines.
 
