@@ -10,7 +10,7 @@ Use your web bookmarks from a searchable CLI-based menu.
 
 ## Running
 
-1. Extract <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">the archive</a> or clone the repository locally.
+1. Extract <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">the archive</a> or clone the repository.
 2. Make sure your system has the <a href="#requirements">requirements</a> installed.
 2. Customize your `PLATFORM`, prefered `BROWSER_CMD` order and other settings in `SETTINGS_LOCAL.lua`.
 3. Create your own `bookmarks.txt` (check out `example.bookmarks.txt`).
@@ -33,19 +33,15 @@ javascript:(function()%7B(()%20%3D%3E%20%7Bconst%20metaKeywords%20%3D%20document
 
 ## Tips & tricks
 
-- Select multiple bookmarks using the `Tab` key.
+You can select multiple bookmarks using the `Tab` key.
 
-### Windows taskbar shortcut
+---
 
-To have a launcher on your Windows taskbar, create a new `Shortcut` with `Right click -> New -> Shortcut`, set the `Target` field to `cmd.exe /c .\fzfb.bat` and `Start in` field to your `fzf-bookmarks` directory, then drag it on the taskbar.
-
-Wrap `fzfb.bat` in another `.bat` if you want more than one pinned shortcut icon.
-
-### File path launch parameter
-
-The `start` scripts accept an optional bookmarks file path parameter, e.g.
-
-`fzfb ~/myfiles/bookmarks.txt` / `fzfb.bat "C:/myfiles/bookmarks.txt"`.
+The `fzfb` script(s) accept an optional bookmarks file path parameter e.g.
+```
+fzfb ~/myfiles/bookmarks.txt`
+fzfb.bat "C:/myfiles/bookmarks.txt"
+```
 
 ## Requirements
 
