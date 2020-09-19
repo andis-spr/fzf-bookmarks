@@ -1,6 +1,6 @@
 # fzf-bookmarks
 
-Use your web bookmarks from a searchable CLI-based menu.
+Use web bookmarks from a searchable CLI-based menu.
 
 ## Features
 
