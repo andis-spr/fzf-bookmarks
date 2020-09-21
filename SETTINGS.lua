@@ -58,9 +58,10 @@ if BOOKMARKS_FILE == nil
 then
     if PLATFORM == 0 or PLATFORM == 1 or PLATFORM == 2 or PLATFORM == 3
     then
-        if (fileExists('bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
+        HOMEDIR = os.getenv("HOME")
+        if (fileExists(HOMEDIR.."/bookmarks.txt")) -- determine if there's a personal 'bookmarks.txt' present
         then
-            BOOKMARKS_FILE=arg[1].."/bookmarks.txt"
+            BOOKMARKS_FILE=HOMEDIR.."/bookmarks.txt"
         else
             BOOKMARKS_FILE=arg[1].."/example.bookmarks.txt"
         end
@@ -68,9 +69,10 @@ then
 
     if PLATFORM == 4
     then
-        if (fileExists(arg[1]..'bookmarks.txt')) -- determine if there's a personal 'bookmarks.txt' present
+        HOMEDIR = os.getenv("USERPROFILE")
+        if (fileExists(HOMEDIR.."/bookmarks.txt")) -- determine if there's a personal 'bookmarks.txt' present
         then
-            BOOKMARKS_FILE=arg[1].."bookmarks.txt"
+            BOOKMARKS_FILE=HOMEDIR.."/bookmarks.txt"
         else
             BOOKMARKS_FILE=arg[1].."example.bookmarks.txt"
         end
