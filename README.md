@@ -1,4 +1,4 @@
-# fzf-bookmarks
+# `fzf-bookmarks`
 
 Windows / *nix script for using web bookmarks stored in a text file.
 
