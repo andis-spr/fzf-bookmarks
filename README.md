@@ -1,6 +1,6 @@
 # fzf-bookmarks
 
-Windows & *nix script for using web bookmarks from a searchable TUI menu.
+Windows & *nix script for using web bookmarks stored in a text file.
 
 ## Preview
 
