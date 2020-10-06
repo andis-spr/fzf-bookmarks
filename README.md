@@ -2,6 +2,10 @@
 
 Use web bookmarks from a searchable CLI-based menu.
 
+## Preview
+
+<img src="https://i.imgur.com/r7ApRJR.png" />
+
 ## Features
 
 - Search and open one or multiple bookmarks in the web browser or copy them to clipboard.
