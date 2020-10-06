@@ -1,6 +1,6 @@
 # fzf-bookmarks
 
-Use web bookmarks from a searchable CLI-based menu.
+Windows & *nix script for using web bookmarks from a searchable TUI menu.
 
 ## Preview
 
