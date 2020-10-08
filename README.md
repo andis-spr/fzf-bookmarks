@@ -1,4 +1,4 @@
-# `fzf-bookmarks`
+# `fzfb`
 
 Windows / *nix script for conveniently using web bookmarks stored in a text file.
 
@@ -14,7 +14,7 @@ Windows / *nix script for conveniently using web bookmarks stored in a text file
 
 ## Running
 
-1. Extract <a href="https://github.com/andis-spr/fzf-bookmarks/archive/master.zip">the archive</a> or clone the repository.
+1. Extract <a href="https://github.com/andis-spr/fzfb/archive/master.zip">the archive</a> or clone the repository.
 2. Make sure your system has the <a href="#requirements">requirements</a> installed.
 2. Customize your `PLATFORM`, prefered `BROWSER_CMD` order and other settings in `SETTINGS_LOCAL.lua`.
 3. Create your own `~/bookmarks.txt` / `%USERPROFILE%\bookmarks.txt` and add some bookmarks (check out `example.bookmarks.txt`).
